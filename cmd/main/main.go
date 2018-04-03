@@ -54,7 +54,7 @@ func main() {
 
 func toJson(i interface{}) {
 	j, _ := json.Marshal(i)
-	ji, _ := json.MarshalIndent(i, "\t", " ")
+	ji, _ := json.MarshalIndent(i, "\t", "")
 	logrus.Infoln(string(j))
 	ioutil.WriteFile("data.json", ji, os.ModePerm)
 }
