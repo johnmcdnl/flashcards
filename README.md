@@ -43,3 +43,4 @@ Updates to come that
 * expand phrase set and translations
 * auto translations
 * groups of nouns/verbs etc.
+* adding better cmd args
