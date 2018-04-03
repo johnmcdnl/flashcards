@@ -13,7 +13,7 @@ func NewTranslation(l Language, value string) *Translation {
 		ID:       NewID(),
 		Language: l,
 		Value:    value,
-		Stats:    new(Stats),
+		Stats:    NewStats(),
 	}
 }
 

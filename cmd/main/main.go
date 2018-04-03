@@ -9,6 +9,7 @@ import (
 func main() {
 
 	var deck = NewDeck("deck.db")
+	seed(deck)
 	deck.Know = English
 	deck.Learning = Russian
 
