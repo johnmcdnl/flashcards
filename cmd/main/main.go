@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"math/rand"
 	"os"
 
 	"github.com/sirupsen/logrus"
@@ -40,29 +39,34 @@ func main() {
 		),
 	)
 
-	rand.Seed(42)
-
+	deck.Know = English
+	deck.Learning = Russian
 	for i := 1; i <= 10; i++ {
 		log(deck.Next().Phrase.Language(Russian))
 		logError(deck.Current)
+
+		deck.Current.PrintQuestion(deck)
+		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "hello")
 	}
+
+	toJson(deck)
 
 }
 
 func toJson(i interface{}) {
 	j, _ := json.Marshal(i)
 	ji, _ := json.MarshalIndent(i, " ", "\t")
-	logrus.Infoln(string(j))
+	logrus.Debugln(string(j))
 	ioutil.WriteFile("data.json", ji, os.ModePerm)
 }
 
 func logError(i interface{}) {
 	j, _ := json.Marshal(i)
-	logrus.Errorln(string(j))
+	logrus.Debug(string(j))
 	fmt.Println()
 }
 
 func log(i interface{}) {
 	j, _ := json.Marshal(i)
-	logrus.Info(string(j))
+	logrus.Debug(string(j))
 }

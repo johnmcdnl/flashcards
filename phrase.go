@@ -1,7 +1,6 @@
 package flashcards
 
 type Phrase struct {
-	Value        string         `json:"value,omitempty"`
 	Translations []*Translation `json:"translations,omitempty"`
 }
 
