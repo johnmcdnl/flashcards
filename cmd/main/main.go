@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"math/rand"
 	"os"
@@ -40,21 +41,28 @@ func main() {
 	)
 
 	rand.Seed(42)
-	toJson(deck.Next().Phrase.Language(Russian))
-	toJson(deck.Next().Phrase.Language(Russian))
-	toJson(deck.Next().Phrase.Language(Russian))
-	toJson(deck.Next().Phrase.Language(Russian))
-	toJson(deck.Next().Phrase.Language(Russian))
-	toJson(deck.Next().Phrase.Language(Russian))
-	toJson(deck.Next().Phrase.Language(Russian))
-	toJson(deck.Next().Phrase.Language(Russian))
-	toJson(deck.Next().Phrase.Language(Russian))
-	toJson(deck.Next().Phrase.Language(Russian))
+
+	for i := 1; i <= 10; i++ {
+		log(deck.Next().Phrase.Language(Russian))
+		logError(deck.Current)
+	}
+
 }
 
 func toJson(i interface{}) {
 	j, _ := json.Marshal(i)
-	ji, _ := json.MarshalIndent(i, "\t", "")
+	ji, _ := json.MarshalIndent(i, " ", "\t")
 	logrus.Infoln(string(j))
 	ioutil.WriteFile("data.json", ji, os.ModePerm)
+}
+
+func logError(i interface{}) {
+	j, _ := json.Marshal(i)
+	logrus.Errorln(string(j))
+	fmt.Println()
+}
+
+func log(i interface{}) {
+	j, _ := json.Marshal(i)
+	logrus.Info(string(j))
 }

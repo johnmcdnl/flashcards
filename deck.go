@@ -3,8 +3,9 @@ package flashcards
 import "math/rand"
 
 type Deck struct {
-	last  *Card
-	Cards []*Card `json:"cards,omitempty"`
+	Last    *Card
+	Current *Card
+	Cards   []*Card `json:"cards,omitempty"`
 }
 
 func NewDeck() *Deck {
@@ -17,12 +18,13 @@ func (d *Deck) WithCard(c *Card) *Deck {
 }
 
 func (d *Deck) Next() *Card {
-	d.last = d.Cards[0]
+	d.Last = d.Cards[0]
 	d.Shuffle()
-	if len(d.Cards) > 1 && d.Cards[0] == d.last {
+	if len(d.Cards) > 1 && d.Cards[0] == d.Last {
 		return d.Next()
 	}
-	return d.Cards[0]
+	d.Current = d.Cards[0]
+	return d.Current
 }
 
 func (d *Deck) Shuffle() {
