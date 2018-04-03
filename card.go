@@ -1,8 +1,10 @@
 package flashcards
 
 import (
+	"bufio"
 	"fmt"
 	"math/rand"
+	"os"
 	"strings"
 )
 
@@ -43,6 +45,11 @@ func (c *Card) PrintQuestion(deck *Deck) {
 }
 
 func (c *Card) AttemptAnswer(know, learning Language, attempt string) {
+
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Type your answer: ")
+	text, _ := reader.ReadString('\n')
+	fmt.Println(text)
 
 	correctValue := c.Phrase.Language(know).Value
 
