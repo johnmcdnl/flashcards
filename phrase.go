@@ -1,11 +1,13 @@
 package flashcards
 
 type Phrase struct {
+	ID ID `json:"id"`
+
 	Translations []*Translation `json:"translations,omitempty"`
 }
 
 func NewPhrase() *Phrase {
-	return &Phrase{}
+	return &Phrase{ID: NewID()}
 }
 
 func (p *Phrase) WithTranslation(t *Translation) *Phrase {

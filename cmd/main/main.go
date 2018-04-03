@@ -14,7 +14,7 @@ func main() {
 
 	for i := 1; i <= 3; i++ {
 		println(i)
-		deck.Next()
+		deck.NextWeighted()
 		deck.Current.PrintQuestion(deck)
 		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "")
 		deck.SaveState()

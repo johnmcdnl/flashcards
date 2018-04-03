@@ -11,6 +11,7 @@ import (
 )
 
 type Card struct {
+	ID     ID      `json:"id"`
 	Phrase *Phrase `json:"phrase,omitempty"`
 }
 
@@ -23,6 +24,7 @@ func ShuffleCards(cards []*Card) {
 
 func NewCard(p *Phrase) *Card {
 	return &Card{
+		ID:     NewID(),
 		Phrase: p,
 	}
 }

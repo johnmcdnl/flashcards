@@ -1,13 +1,15 @@
 package flashcards
 
 type Stats struct {
+	ID         ID      `json:"id"`
 	Attempts   int     `json:"attempts"`
 	Correct    int     `json:"correct"`
 	Percentage float64 `json:"percentage"`
+	Weighting  float64 `json:"weighting"`
 }
 
 func NewStats() *Stats {
-	return &Stats{}
+	return &Stats{ID: NewID()}
 }
 
 func (s *Stats) CorrectAttempt() {
