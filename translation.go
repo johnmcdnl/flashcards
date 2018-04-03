@@ -6,6 +6,14 @@ type Translation struct {
 	Phonetics []*Phonetic `json:"phonetics,omitempty"`
 }
 
-func NewTranslation() *Translation {
-	return &Translation{}
+func NewTranslation(l Language, value string) *Translation {
+	return &Translation{
+		Language: l,
+		Value:    value,
+	}
+}
+
+func (t *Translation) WithPhonetic(p *Phonetic) *Translation {
+	t.Phonetics = append(t.Phonetics, p)
+	return t
 }

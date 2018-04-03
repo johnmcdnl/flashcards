@@ -6,17 +6,42 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/johnmcdnl/flashcards"
+	. "github.com/johnmcdnl/flashcards"
 )
 
 func main() {
-	deck := flashcards.NewDeck()
-
+	deck := NewDeck().WithCard(
+		NewCard(NewPhrase().WithTranslation(
+			NewTranslation(English, "Hello")).WithTranslation(
+			NewTranslation(Russian, "Здравствуйте").WithPhonetic(
+				NewPhonetic(English, "Zdravstvuyte"))).WithTranslation(
+			NewTranslation(French, "Bonjour")),
+		)).WithCard(
+		NewCard(NewPhrase().WithTranslation(
+			NewTranslation(English, "Goodbye")).WithTranslation(
+			NewTranslation(Russian, "до свидания").WithPhonetic(
+				NewPhonetic(English, "do svidaniya"))).WithTranslation(
+			NewTranslation(French, "Au revoir")),
+		)).WithCard(
+		NewCard(NewPhrase().WithTranslation(
+			NewTranslation(English, "Dog")).WithTranslation(
+			NewTranslation(Russian, "Собака").WithPhonetic(
+				NewPhonetic(English, "Sobaka"))).WithTranslation(
+			NewTranslation(French, "Chien")),
+		)).WithCard(
+		NewCard(NewPhrase().WithTranslation(
+			NewTranslation(English, "Elephant")).WithTranslation(
+			NewTranslation(Russian, "слон").WithPhonetic(
+				NewPhonetic(English, "slon"))).WithTranslation(
+			NewTranslation(French, "l'éléphant")),
+		),
+	)
 	toJson(deck)
 }
 
 func toJson(i interface{}) {
 	j, _ := json.Marshal(i)
+	ji, _ := json.MarshalIndent(i, "\t", " ")
 	fmt.Println(string(j))
-	ioutil.WriteFile("data.json", j, os.ModePerm)
+	ioutil.WriteFile("data.json", ji, os.ModePerm)
 }
