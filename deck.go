@@ -107,7 +107,7 @@ func (d *Deck) NextWeighted() *Card {
 		}
 	}
 
-	toJSON(stats)
+	// toJSON(stats)
 	return d.Next()
 }
 
