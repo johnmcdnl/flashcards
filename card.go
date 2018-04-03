@@ -46,16 +46,21 @@ func (c *Card) PrintQuestion(deck *Deck) {
 
 func (c *Card) AttemptAnswer(know, learning Language, attempt string) {
 
-	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Type your answer: ")
-	text, _ := reader.ReadString('\n')
-	fmt.Println(text)
+	if attempt == "" {
+		reader := bufio.NewReader(os.Stdin)
+		fmt.Print("Type your answer: ")
+		attempt, _ = reader.ReadString('\n')
+		attempt = strings.Trim(attempt, " ")
+		attempt = strings.Trim(attempt, "\n")
+	}
 
 	correctValue := c.Phrase.Language(know).Value
 
 	if strings.EqualFold(correctValue, attempt) {
+		fmt.Println("Correct!")
 		c.Phrase.Language(learning).Stats.CorrectAttempt()
 	} else {
+		fmt.Println("Incorrect!! ", correctValue)
 		c.Phrase.Language(learning).Stats.WrongAttempt()
 	}
 

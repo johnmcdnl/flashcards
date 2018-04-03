@@ -28,7 +28,7 @@ func (d *Deck) WithCard(c *Card) *Deck {
 }
 
 func (d *Deck) Next() *Card {
-	d.Last = d.Cards[0]
+	d.Last = d.Current
 	d.Shuffle()
 	d.Current = d.Cards[0]
 	if len(d.Cards) > 1 && d.Current == d.Last {

@@ -41,12 +41,12 @@ func main() {
 
 	deck.Know = English
 	deck.Learning = Russian
-	for i := 1; i <= 10; i++ {
+	for i := 1; i <= 5; i++ {
 		log(deck.Next().Phrase.Language(Russian))
 		logError(deck.Current)
 
 		deck.Current.PrintQuestion(deck)
-		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "hello")
+		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "")
 	}
 
 	toJson(deck)
