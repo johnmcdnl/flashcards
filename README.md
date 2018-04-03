@@ -38,7 +38,6 @@ ERRO[0037] Incorrect!!   земля  zemlya    ground
 Updates to come that
 
 * add ability to render actual pictures as flashcards
-* store data and stats in some form of db
 * adjust cards rendered to user depending on learning i.e. less need to replay words you already have learned
 * expand phrase set and translations
 * auto translations
