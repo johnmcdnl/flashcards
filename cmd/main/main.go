@@ -2,9 +2,11 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
+	"math/rand"
 	"os"
+
+	"github.com/sirupsen/logrus"
 
 	. "github.com/johnmcdnl/flashcards"
 )
@@ -36,12 +38,23 @@ func main() {
 			NewTranslation(French, "l'éléphant")),
 		),
 	)
-	toJson(deck)
+
+	rand.Seed(42)
+	toJson(deck.Next().Phrase.Language(Russian))
+	toJson(deck.Next().Phrase.Language(Russian))
+	toJson(deck.Next().Phrase.Language(Russian))
+	toJson(deck.Next().Phrase.Language(Russian))
+	toJson(deck.Next().Phrase.Language(Russian))
+	toJson(deck.Next().Phrase.Language(Russian))
+	toJson(deck.Next().Phrase.Language(Russian))
+	toJson(deck.Next().Phrase.Language(Russian))
+	toJson(deck.Next().Phrase.Language(Russian))
+	toJson(deck.Next().Phrase.Language(Russian))
 }
 
 func toJson(i interface{}) {
 	j, _ := json.Marshal(i)
 	ji, _ := json.MarshalIndent(i, "\t", " ")
-	fmt.Println(string(j))
+	logrus.Infoln(string(j))
 	ioutil.WriteFile("data.json", ji, os.ModePerm)
 }
