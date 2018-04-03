@@ -2,7 +2,6 @@ package flashcards
 
 import (
 	"encoding/json"
-	"fmt"
 	"math/rand"
 	"os"
 	"time"
@@ -18,7 +17,7 @@ func init() {
 
 type Deck struct {
 	dbPath   string
-	ID       ID       `json:"id"`
+	ID       ID       `json:"-"`
 	Last     *Card    `json:"-"`
 	Current  *Card    `json:"-"`
 	Know     Language `json:"know,omitempty"`
@@ -97,6 +96,9 @@ func (d *Deck) Next() *Card {
 }
 
 func (d *Deck) NextWeighted() *Card {
+	d.Last = d.Current
+	d.Shuffle()
+
 	var stats []*Stats
 	for _, c := range d.Cards {
 		for _, t := range c.Phrase.Translations {
@@ -107,13 +109,36 @@ func (d *Deck) NextWeighted() *Card {
 		}
 	}
 
-	// toJSON(stats)
-	return d.Next()
-}
+	for _, s := range stats {
+		s.Weighting = (1 - s.Percentage) * 100
+		if s.Attempts <= 10 {
+			s.Weighting = 0.5 * 100
+		}
+		if s.Weighting == 0 {
+			s.Weighting = 1
+		}
+	}
 
-func toJSON(i interface{}) {
-	j, _ := json.Marshal(i)
-	fmt.Println(string(j))
+	var totalWeight float64
+	for _, s := range stats {
+		totalWeight += s.Weighting
+	}
+
+	r := rand.Intn(int(totalWeight))
+	for _, c := range d.Cards {
+		for _, t := range c.Phrase.Translations {
+			r -= int(t.Stats.Weighting)
+			if r <= 0 {
+				d.Current = d.Cards[0]
+				if len(d.Cards) > 1 && d.Current == d.Last {
+					d.Current = d.Cards[1]
+				}
+				break
+			}
+		}
+	}
+
+	return d.Current
 }
 
 func (d *Deck) Shuffle() {

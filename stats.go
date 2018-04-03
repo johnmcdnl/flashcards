@@ -1,7 +1,7 @@
 package flashcards
 
 type Stats struct {
-	ID         ID      `json:"id"`
+	ID         ID      `json:"-"`
 	Attempts   int     `json:"attempts"`
 	Correct    int     `json:"correct"`
 	Percentage float64 `json:"percentage"`

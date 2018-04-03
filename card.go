@@ -11,7 +11,7 @@ import (
 )
 
 type Card struct {
-	ID     ID      `json:"id"`
+	ID     ID      `json:"-"`
 	Phrase *Phrase `json:"phrase,omitempty"`
 }
 

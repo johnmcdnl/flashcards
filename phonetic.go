@@ -1,8 +1,7 @@
 package flashcards
 
 type Phonetic struct {
-	ID ID `json:"id"`
-
+	ID       ID `json:"-"`
 	Language `json:"language,omitempty"`
 	Value    string `json:"value,omitempty"`
 }

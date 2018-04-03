@@ -1,8 +1,7 @@
 package flashcards
 
 type Phrase struct {
-	ID ID `json:"id"`
-
+	ID           ID             `json:"-"`
 	Translations []*Translation `json:"translations,omitempty"`
 }
 

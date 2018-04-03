@@ -1,7 +1,7 @@
 package flashcards
 
 type Translation struct {
-	ID        ID `json:"id"`
+	ID        ID `json:"-"`
 	Language  `json:"language,omitempty"`
 	Value     string      `json:"value,omitempty"`
 	Phonetics []*Phonetic `json:"phonetics,omitempty"`
