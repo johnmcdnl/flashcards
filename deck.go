@@ -1,8 +1,14 @@
 package flashcards
 
 import (
+	"encoding/json"
 	"math/rand"
+	"os"
 	"time"
+
+	"github.com/sirupsen/logrus"
+
+	"github.com/boltdb/bolt"
 )
 
 func init() {
@@ -10,6 +16,7 @@ func init() {
 }
 
 type Deck struct {
+	dbPath   string
 	Last     *Card    `json:"-"`
 	Current  *Card    `json:"-"`
 	Know     Language `json:"know,omitempty"`
@@ -17,9 +24,33 @@ type Deck struct {
 	Cards    []*Card  `json:"cards,omitempty"`
 }
 
-func NewDeck() *Deck {
-
-	return &Deck{}
+func NewDeck(path string) *Deck {
+	if path == "" {
+		path = "deck.db"
+	}
+	db, err := bolt.Open(path, os.ModePerm, &bolt.Options{ReadOnly: false})
+	if err != nil {
+		logrus.Fatal(err)
+	}
+	defer db.Close()
+	var deck Deck
+	err = db.Update(func(tx *bolt.Tx) error {
+		bucket, err := tx.CreateBucketIfNotExists([]byte("deck"))
+		if err != nil {
+			return err
+		}
+		deckBytes := bucket.Get([]byte("deck"))
+		if len(deckBytes) == 0 {
+			deck = Deck{}
+			return nil
+		}
+		return json.Unmarshal(deckBytes, &deck)
+	})
+	if err != nil {
+		logrus.Fatal(err)
+	}
+	deck.dbPath = path
+	return &deck
 }
 
 func (d *Deck) WithCard(c *Card) *Deck {
@@ -59,4 +90,29 @@ func (d *Deck) GetIncorrectGuesses(correct *Card, n int) []*Card {
 
 	ShuffleCards(copyCards)
 	return copyCards[:n]
+}
+
+func (d *Deck) SaveState() {
+	if d.dbPath == "" {
+		d.dbPath = "deck.db"
+	}
+	db, err := bolt.Open(d.dbPath, os.ModePerm, &bolt.Options{ReadOnly: false})
+	if err != nil {
+		logrus.Fatal(err)
+	}
+	defer db.Close()
+	err = db.Update(func(tx *bolt.Tx) error {
+		bucket, err := tx.CreateBucketIfNotExists([]byte("deck"))
+		if err != nil {
+			return err
+		}
+		data, err := json.Marshal(d)
+		if err != nil {
+			return err
+		}
+		return bucket.Put([]byte("deck"), data)
+	})
+	if err != nil {
+		logrus.Fatal(err)
+	}
 }

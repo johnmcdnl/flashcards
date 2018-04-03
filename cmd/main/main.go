@@ -8,7 +8,22 @@ import (
 
 func main() {
 
-	var deck = NewDeck()
+	var deck = NewDeck("deck.db")
+
+	deck.Know = English
+	deck.Learning = Russian
+	for i := 1; i <= 3; i++ {
+		println(i)
+		deck.Next()
+		deck.Current.PrintQuestion(deck)
+		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "")
+		deck.SaveState()
+		fmt.Println()
+		fmt.Println()
+	}
+}
+
+func seed(deck *Deck) {
 	deck.WithCard(NewCard(NewPhrase().WithTranslation(NewTranslation(English, "apple")).WithTranslation(NewTranslation(Russian, "яблоко").WithPhonetic(NewPhonetic(English, "yabloko")))))
 	deck.WithCard(NewCard(NewPhrase().WithTranslation(NewTranslation(English, "baby")).WithTranslation(NewTranslation(Russian, "детка").WithPhonetic(NewPhonetic(English, "detka")))))
 	deck.WithCard(NewCard(NewPhrase().WithTranslation(NewTranslation(English, "back")).WithTranslation(NewTranslation(Russian, "назад").WithPhonetic(NewPhonetic(English, "nazad")))))
@@ -92,14 +107,5 @@ func main() {
 	deck.WithCard(NewCard(NewPhrase().WithTranslation(NewTranslation(English, "stick")).WithTranslation(NewTranslation(Russian, "придерживаться").WithPhonetic(NewPhonetic(English, "priderzhivat'sya")))))
 	deck.WithCard(NewCard(NewPhrase().WithTranslation(NewTranslation(English, "street")).WithTranslation(NewTranslation(Russian, "улица").WithPhonetic(NewPhonetic(English, "ulitsa")))))
 	deck.WithCard(NewCard(NewPhrase().WithTranslation(NewTranslation(English, "sun")).WithTranslation(NewTranslation(Russian, "солнце").WithPhonetic(NewPhonetic(English, "solntse")))))
-	deck.Know = English
-	deck.Learning = Russian
-	for i := 1; i <= 20; i++ {
-		println(i)
-		deck.Next()
-		deck.Current.PrintQuestion(deck)
-		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "")
-		fmt.Println()
-		fmt.Println()
-	}
+	deck.SaveState()
 }
