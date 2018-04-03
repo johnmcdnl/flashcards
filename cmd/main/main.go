@@ -9,9 +9,9 @@ import (
 func main() {
 
 	var deck = NewDeck("deck.db")
-
 	deck.Know = English
 	deck.Learning = Russian
+
 	for i := 1; i <= 3; i++ {
 		println(i)
 		deck.Next()
