@@ -1,13 +1,7 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
-	"os"
-
-	"github.com/sirupsen/logrus"
-
 	. "github.com/johnmcdnl/flashcards"
 )
 
@@ -99,32 +93,11 @@ func main() {
 	deck.WithCard(NewCard(NewPhrase().WithTranslation(NewTranslation(English, "sun")).WithTranslation(NewTranslation(Russian, "солнце").WithPhonetic(NewPhonetic(English, "solntse")))))
 	deck.Know = English
 	deck.Learning = Russian
-	for i := 1; i <= 5; i++ {
+	for i := 1; i <= 1000; i++ {
 		deck.Next()
-		logError(deck.Current)
-
 		deck.Current.PrintQuestion(deck)
 		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "")
+		fmt.Println()
+		fmt.Println()
 	}
-
-	toJson(deck)
-
-}
-
-func toJson(i interface{}) {
-	j, _ := json.Marshal(i)
-	ji, _ := json.MarshalIndent(i, " ", "\t")
-	logrus.Debugln(string(j))
-	ioutil.WriteFile("data.json", ji, os.ModePerm)
-}
-
-func logError(i interface{}) {
-	j, _ := json.Marshal(i)
-	logrus.Debug(string(j))
-	fmt.Println()
-}
-
-func log(i interface{}) {
-	j, _ := json.Marshal(i)
-	logrus.Debug(string(j))
 }

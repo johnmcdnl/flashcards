@@ -6,6 +6,8 @@ import (
 	"math/rand"
 	"os"
 	"strings"
+
+	"github.com/sirupsen/logrus"
 )
 
 type Card struct {
@@ -54,13 +56,15 @@ func (c *Card) AttemptAnswer(know, learning Language, attempt string) {
 		attempt = strings.Trim(attempt, "\n")
 	}
 
+	learnValue := c.Phrase.Language(learning).Value
+	learnPhonetic := c.Phrase.Language(learning).GetPhonetic(know).Value
 	correctValue := c.Phrase.Language(know).Value
 
 	if strings.EqualFold(correctValue, attempt) {
 		fmt.Println("Correct!")
 		c.Phrase.Language(learning).Stats.CorrectAttempt()
 	} else {
-		fmt.Println("Incorrect!! ", correctValue)
+		logrus.Errorf("Incorrect!!   %s  %s    %s", learnValue, learnPhonetic, correctValue)
 		c.Phrase.Language(learning).Stats.WrongAttempt()
 	}
 
