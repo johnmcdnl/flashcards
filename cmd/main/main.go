@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	. "github.com/johnmcdnl/flashcards"
 )
 
@@ -93,7 +94,8 @@ func main() {
 	deck.WithCard(NewCard(NewPhrase().WithTranslation(NewTranslation(English, "sun")).WithTranslation(NewTranslation(Russian, "солнце").WithPhonetic(NewPhonetic(English, "solntse")))))
 	deck.Know = English
 	deck.Learning = Russian
-	for i := 1; i <= 1000; i++ {
+	for i := 1; i <= 20; i++ {
+		println(i)
 		deck.Next()
 		deck.Current.PrintQuestion(deck)
 		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "")
