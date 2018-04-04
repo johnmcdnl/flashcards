@@ -15,6 +15,7 @@ import (
 func main() {
 	parseVerbs()
 	parseNouns()
+	parseGeneralServiceList()
 }
 
 func parseAll(dir string, source, target Language) {
@@ -43,6 +44,16 @@ func parseVerbs() {
 func parseNouns() {
 
 	data, err := ioutil.ReadFile("./cmd/seed/nouns.csv")
+	if err != nil {
+		logrus.Fatal(err)
+	}
+	parse(English, Russian, data)
+
+}
+
+func parseGeneralServiceList() {
+
+	data, err := ioutil.ReadFile("./cmd/seed/GeneralServiceList.csv")
 	if err != nil {
 		logrus.Fatal(err)
 	}
