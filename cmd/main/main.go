@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"strings"
 
 	. "github.com/johnmcdnl/flashcards"
 )
@@ -13,15 +14,35 @@ func main() {
 	deck.Know = English
 	deck.Learning = Russian
 
-	for i := 1; i <= 10; i++ {
+	appleCount := 0
+	backCount := 0
+	babyCount := 0
+
+	for i := 1; i <= 10000; i++ {
 		println(i)
 		deck.NextWeighted()
-		deck.Current.PrintQuestion(deck)
-		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "")
-		deck.SaveState()
+
+		switch strings.ToLower(deck.Current.Phrase.Language(English).Value) {
+		default:
+			panic("woops")
+		case "apple":
+			appleCount++
+		case "baby":
+			babyCount++
+		case "back":
+			backCount++
+		}
+
+		// deck.Current.PrintQuestion(deck)
+		// deck.Current.AttemptAnswer(deck.Know, deck.Learning, "abc")
+		// deck.SaveState()
 		fmt.Println()
 		fmt.Println()
 	}
+
+	fmt.Println("apple ", appleCount)
+	fmt.Println("baby ", babyCount)
+	fmt.Println("back ", backCount)
 	toJSON(deck)
 }
 

@@ -110,7 +110,7 @@ func (d *Deck) NextWeighted() *Card {
 	}
 
 	for _, s := range stats {
-		s.Weighting = (1 - s.Percentage) * 100
+		s.Weighting = 100 - float64(s.Percentage*100)
 		if s.Attempts <= 10 {
 			s.Weighting = 0.5 * 100
 		}
@@ -124,16 +124,22 @@ func (d *Deck) NextWeighted() *Card {
 		totalWeight += s.Weighting
 	}
 
+	logrus.Info("totalWeight: ", totalWeight)
+
+	rand.Seed(time.Now().UnixNano())
 	r := rand.Intn(int(totalWeight))
+
 	for _, c := range d.Cards {
 		for _, t := range c.Phrase.Translations {
-			r -= int(t.Stats.Weighting)
-			if r <= 0 {
-				d.Current = d.Cards[0]
-				if len(d.Cards) > 1 && d.Current == d.Last {
-					d.Current = d.Cards[1]
+			if t.Language == d.Learning {
+				// logrus.Info("r: ", r)
+				r -= int(t.Stats.Weighting)
+				// logrus.Info("t.Stats.Weighting ", int(t.Stats.Weighting))
+				// logrus.Info("r: ", r)
+				if r <= 0 {
+					d.Current = c
+					break
 				}
-				break
 			}
 		}
 	}
