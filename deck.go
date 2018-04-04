@@ -86,7 +86,6 @@ func (d *Deck) WithCard(c *Card) *Deck {
 }
 
 func (d *Deck) Next() *Card {
-
 	if len(d.Cards) < 1 {
 		panic("no cards!!")
 	}

@@ -16,7 +16,7 @@ func main() {
 	deck.Know = English
 	deck.Learning = Russian
 
-	for i := 1; i <= 3; i++ {
+	for i := 1; i <= 10; i++ {
 		deck.Next()
 		deck.Current.PrintQuestion(deck)
 		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "")

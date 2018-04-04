@@ -1,6 +1,6 @@
 # Flashcards
 
-Simulate a set of flashcards to help learn a new lanuage
+Simulate a set of flashcards to help learn a new language
 
 Automatically adjusts cards returns to factor in what you've previously learned i.e. focus on what you don't know rather than on what you've already learned
 
