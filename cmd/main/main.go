@@ -34,8 +34,3 @@ func toJSON(i interface{}) {
 	// fmt.Println(string(j))
 	ioutil.WriteFile("data.json", j, os.ModePerm)
 }
-
-func seed(deck *Deck) {
-	deck.WithCard(NewCard(NewPhrase().WithTranslation(NewTranslation(English, "sun")).WithTranslation(NewTranslation(Russian, "солнце").WithPhonetic(NewPhonetic(English, "solntse")))))
-	deck.SaveState()
-}
