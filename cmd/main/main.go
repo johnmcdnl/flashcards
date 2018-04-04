@@ -11,7 +11,7 @@ import (
 
 func main() {
 
-	var deck = NewDeckWithSize("deck.db", 25)
+	var deck = NewDeckWithSize("deck.db", 0, 3, false)
 
 	deck.Know = English
 	deck.Learning = Russian

@@ -39,8 +39,10 @@ func (c *Card) PrintQuestion(deck *Deck) {
 	ShuffleCards(options)
 
 	learning := c.Phrase.Language(deck.Learning)
-
-	msg := fmt.Sprintf("Translate: %s  %s ", learning.Value, learning.GetPhonetic(deck.Know).Value)
+	percentage := learning.Stats.Percentage * 100
+	weighting := learning.Stats.Weighting
+	msg := fmt.Sprintf("Translate: %s  %s     (%.1f %s   %.1f)",
+		learning.Value, learning.GetPhonetic(deck.Know).Value, percentage, "%", weighting)
 	for i, o := range options {
 		msg = fmt.Sprintf("%s \n \t %d) %s", msg, i+1, o.Phrase.Language(deck.Know).Value)
 	}
@@ -51,23 +53,42 @@ func (c *Card) PrintQuestion(deck *Deck) {
 func (c *Card) AttemptAnswer(know, learning Language, attempt string) {
 
 	if attempt == "" {
-		reader := bufio.NewReader(os.Stdin)
-		fmt.Print("Type your answer: ")
-		attempt, _ = reader.ReadString('\n')
-		attempt = strings.Trim(attempt, " ")
-		attempt = strings.Trim(attempt, "\n")
+		attempt = readString()
 	}
 
-	learnValue := c.Phrase.Language(learning).Value
-	learnPhonetic := c.Phrase.Language(learning).GetPhonetic(know).Value
-	correctValue := c.Phrase.Language(know).Value
+	phrase := c.Phrase
 
-	if strings.EqualFold(correctValue, attempt) {
-		fmt.Println("Correct!")
+	knowT := phrase.Language(know)
+	learningT := phrase.Language(learning)
+
+	if strings.EqualFold(attempt, knowT.Value) {
 		c.Phrase.Language(learning).Stats.CorrectAttempt()
 	} else {
-		logrus.Errorf("Incorrect!!   %s  %s    %s", learnValue, learnPhonetic, correctValue)
 		c.Phrase.Language(learning).Stats.WrongAttempt()
+		logrus.Errorf("\t | \t %s \t | \t %s \t | \t %s \t | \t %s",
+			attempt,
+			learningT.Value,
+			learningT.GetPhonetic(know).Value,
+			knowT.Value,
+		)
 	}
+
+	// if strings.EqualFold(correctValue, attempt) {
+	// 	c.Phrase.Language(learning).Stats.CorrectAttempt()
+	// } else {
+	// 	c.Phrase.Language(learning).Stats.WrongAttempt()
+	// 	logrus.Errorf("| %s \t | %s \t | %s \t | ",
+	// 		attempt, correctValue, correctPhonetic)
+	// }
+
+}
+
+func readString() string {
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Type your answer: ")
+	input, _ := reader.ReadString('\n')
+	input = strings.Trim(input, " ")
+	input = strings.Trim(input, "\n")
+	return input
 
 }

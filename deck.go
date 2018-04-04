@@ -28,11 +28,14 @@ type Deck struct {
 	Cards    []*Card `json:"cards,omitempty"`
 }
 
-func NewDeckWithSize(path string, size int) *Deck {
+func NewDeckWithSize(path string, start, end int, shuffle bool) *Deck {
 	deck := NewDeck(path)
-	deck.Shuffle()
 
-	deck.subdeck = deck.Cards[:size]
+	if shuffle {
+		deck.Shuffle()
+	}
+
+	deck.subdeck = deck.Cards[start:end]
 
 	return deck
 }

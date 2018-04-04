@@ -1,5 +1,11 @@
 package flashcards
 
+import (
+	"fmt"
+
+	"github.com/sirupsen/logrus"
+)
+
 type Stats struct {
 	ID         ID      `json:"-"`
 	Attempts   int     `json:"attempts"`
@@ -14,15 +20,21 @@ func NewStats() *Stats {
 	return s
 }
 
+func (s *Stats) String() string {
+	return fmt.Sprintf("Percentage: %.1f %s\t | Weight: %.1f", s.Percentage*100, "%", s.Weighting)
+}
+
 func (s *Stats) CorrectAttempt() {
 	s.Attempts++
 	s.Correct++
 	s.update()
+	logrus.Info("Correct \t | ", s.String())
 }
 
 func (s *Stats) WrongAttempt() {
 	s.Attempts++
 	s.update()
+	logrus.Info("Wrong!!! \t | ", s.String())
 }
 
 func (s *Stats) update() {
