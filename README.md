@@ -2,6 +2,8 @@
 
 Simulate a set of flashcards to help learn a new lanuage
 
+Automatically adjusts cards returns to factor in what you've previously learned i.e. focus on what you don't know rather than on what you've already learned
+
 For now just terminal based so something a little bit like
 
 ``` text
@@ -38,7 +40,6 @@ ERRO[0037] Incorrect!!   земля  zemlya    ground
 Updates to come that
 
 * add ability to render actual pictures as flashcards
-* adjust cards rendered to user depending on learning i.e. less need to replay words you already have learned
 * expand phrase set and translations
 * auto translations
 * groups of nouns/verbs etc.

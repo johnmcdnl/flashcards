@@ -90,7 +90,7 @@ func (d *Deck) Next() *Card {
 	for _, card := range d.Cards {
 		totalWeight += card.Phrase.Language(d.Learning).Stats.Weighting
 	}
-
+	logrus.Error(totalWeight)
 	r := rand.Intn(int(totalWeight))
 	for _, card := range d.Cards {
 		r -= int(card.Phrase.Language(d.Learning).Stats.Weighting)
