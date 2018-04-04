@@ -24,7 +24,17 @@ type Deck struct {
 	Current  *Card    `json:"-"`
 	Know     Language `json:"know,omitempty"`
 	Learning Language `json:"learning,omitempty"`
-	Cards    []*Card  `json:"cards,omitempty"`
+	subdeck  []*Card
+	Cards    []*Card `json:"cards,omitempty"`
+}
+
+func NewDeckWithSize(path string, size int) *Deck {
+	deck := NewDeck(path)
+	deck.Shuffle()
+
+	deck.subdeck = deck.Cards[:size]
+
+	return deck
 }
 
 func NewDeck(path string) *Deck {
@@ -91,18 +101,27 @@ func (d *Deck) WithCard(c *Card) *Deck {
 }
 
 func (d *Deck) Next() *Card {
-	if len(d.Cards) < 1 {
+
+	if len(d.subdeck) > 0 {
+		return d.next(d.subdeck)
+	}
+
+	return d.next(d.Cards)
+}
+
+func (d *Deck) next(cards []*Card) *Card {
+	if len(cards) < 1 {
 		panic("no cards!!")
 	}
 
 	var totalWeight float64
 
-	for _, card := range d.Cards {
+	for _, card := range cards {
 		card.Phrase.Language(d.Learning).Stats.updateWeighting()
 		totalWeight += card.Phrase.Language(d.Learning).Stats.Weighting
 	}
 	r := rand.Intn(int(totalWeight))
-	for _, card := range d.Cards {
+	for _, card := range cards {
 		r -= int(card.Phrase.Language(d.Learning).Stats.Weighting)
 		if r <= 0 {
 			d.Last = d.Current
