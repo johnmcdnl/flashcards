@@ -9,7 +9,9 @@ type Stats struct {
 }
 
 func NewStats() *Stats {
-	return &Stats{ID: NewID(), Weighting: 50}
+	s := &Stats{ID: NewID(), Weighting: 50}
+	s.update()
+	return s
 }
 
 func (s *Stats) CorrectAttempt() {
@@ -31,19 +33,20 @@ func (s *Stats) update() {
 func (s *Stats) updatePercentage() {
 	if s.Attempts == 0 {
 		s.Percentage = 0
+		return
 	}
 	if s.Correct == 0 {
 		s.Percentage = 0
+		return
 	}
 	s.Percentage = float64(s.Correct) / float64(s.Attempts)
 }
 
 func (s *Stats) updateWeighting() {
 
-	s.updatePercentage()
 	s.Weighting = (1 - s.Percentage) * 100
 
-	if s.Attempts <= 5 {
+	if s.Attempts <= 3 {
 		s.Weighting = 50
 	}
 

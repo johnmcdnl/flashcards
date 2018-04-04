@@ -3,6 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"os"
 
 	. "github.com/johnmcdnl/flashcards"
 )
@@ -10,8 +12,6 @@ import (
 func main() {
 
 	var deck = NewDeck("deck.db")
-
-	// seed(deck)
 
 	deck.Know = English
 	deck.Learning = Russian
@@ -24,12 +24,15 @@ func main() {
 		fmt.Println()
 		fmt.Println()
 	}
+
 	toJSON(deck)
+
 }
 
 func toJSON(i interface{}) {
 	j, _ := json.Marshal(i)
-	fmt.Println(string(j))
+	// fmt.Println(string(j))
+	ioutil.WriteFile("data.json", j, os.ModePerm)
 }
 
 func seed(deck *Deck) {

@@ -31,7 +31,7 @@ func NewDeck(path string) *Deck {
 	}
 	db, err := bolt.Open(path, os.ModePerm, &bolt.Options{ReadOnly: false})
 	if err != nil {
-		logrus.Fatal(err)
+		logrus.Fatalf("NewDeck %s", err)
 	}
 	defer db.Close()
 	var deck Deck
@@ -48,7 +48,7 @@ func NewDeck(path string) *Deck {
 		return json.Unmarshal(deckBytes, &deck)
 	})
 	if err != nil {
-		logrus.Fatal(err)
+		logrus.Fatalf("NewDeck 2 %s", err)
 	}
 	deck.dbPath = path
 	return &deck
@@ -58,9 +58,10 @@ func (d *Deck) SaveState() {
 	if d.dbPath == "" {
 		d.dbPath = "deck.db"
 	}
+
 	db, err := bolt.Open(d.dbPath, os.ModePerm, &bolt.Options{ReadOnly: false})
 	if err != nil {
-		logrus.Fatal(err)
+		logrus.Fatalf("SaveState %s", err)
 	}
 	defer db.Close()
 	err = db.Update(func(tx *bolt.Tx) error {
@@ -75,7 +76,7 @@ func (d *Deck) SaveState() {
 		return bucket.Put([]byte("deck"), data)
 	})
 	if err != nil {
-		logrus.Fatal(err)
+		logrus.Fatalf("SaveState 2 %s", err)
 	}
 }
 
@@ -86,11 +87,16 @@ func (d *Deck) WithCard(c *Card) *Deck {
 
 func (d *Deck) Next() *Card {
 
+	if len(d.Cards) < 1 {
+		panic("no cards!!")
+	}
+
 	var totalWeight float64
+
 	for _, card := range d.Cards {
+		card.Phrase.Language(d.Learning).Stats.updateWeighting()
 		totalWeight += card.Phrase.Language(d.Learning).Stats.Weighting
 	}
-	logrus.Error(totalWeight)
 	r := rand.Intn(int(totalWeight))
 	for _, card := range d.Cards {
 		r -= int(card.Phrase.Language(d.Learning).Stats.Weighting)
