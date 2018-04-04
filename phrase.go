@@ -1,7 +1,15 @@
 package flashcards
 
+type Category string
+
+const (
+	Noun = Category("noun")
+	Verb = Category("noun")
+)
+
 type Phrase struct {
 	ID           ID             `json:"-"`
+	Category     Category       `json:"category,omitempty"`
 	Translations []*Translation `json:"translations,omitempty"`
 }
 

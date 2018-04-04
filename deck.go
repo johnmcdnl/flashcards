@@ -15,6 +15,8 @@ func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
+const phrasesBucket = "phrasesBucket"
+
 type Deck struct {
 	dbPath   string
 	ID       ID       `json:"-"`
@@ -36,11 +38,11 @@ func NewDeck(path string) *Deck {
 	defer db.Close()
 	var deck Deck
 	err = db.Update(func(tx *bolt.Tx) error {
-		bucket, err := tx.CreateBucketIfNotExists([]byte("deck"))
+		bucket, err := tx.CreateBucketIfNotExists([]byte(phrasesBucket))
 		if err != nil {
 			return err
 		}
-		deckBytes := bucket.Get([]byte("deck"))
+		deckBytes := bucket.Get([]byte(phrasesBucket))
 		if len(deckBytes) == 0 {
 			deck = Deck{ID: NewID()}
 			return nil
@@ -55,6 +57,10 @@ func NewDeck(path string) *Deck {
 }
 
 func (d *Deck) SaveState() {
+	d.saveStateToBucket(phrasesBucket)
+}
+
+func (d *Deck) saveStateToBucket(bucketName string) {
 	if d.dbPath == "" {
 		d.dbPath = "deck.db"
 	}
@@ -65,7 +71,7 @@ func (d *Deck) SaveState() {
 	}
 	defer db.Close()
 	err = db.Update(func(tx *bolt.Tx) error {
-		bucket, err := tx.CreateBucketIfNotExists([]byte("deck"))
+		bucket, err := tx.CreateBucketIfNotExists([]byte(bucketName))
 		if err != nil {
 			return err
 		}
@@ -73,13 +79,12 @@ func (d *Deck) SaveState() {
 		if err != nil {
 			return err
 		}
-		return bucket.Put([]byte("deck"), data)
+		return bucket.Put([]byte(bucketName), data)
 	})
 	if err != nil {
 		logrus.Fatalf("SaveState 2 %s", err)
 	}
 }
-
 func (d *Deck) WithCard(c *Card) *Deck {
 	d.Cards = append(d.Cards, c)
 	return d
