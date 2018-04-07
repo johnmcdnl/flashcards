@@ -6,6 +6,7 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
+// Stats contains info on how player is learning a specific phrase
 type Stats struct {
 	ID         ID      `json:"-"`
 	Attempts   int     `json:"attempts"`
@@ -14,16 +15,19 @@ type Stats struct {
 	Weighting  float64 `json:"weighting"`
 }
 
+// NewStats returns a new stats
 func NewStats() *Stats {
 	s := &Stats{ID: NewID(), Weighting: 50}
 	s.update()
 	return s
 }
 
+// String returns a formatte representation of stats
 func (s *Stats) String() string {
 	return fmt.Sprintf("Percentage: %.1f %s\t | Weight: %.1f", s.Percentage*100, "%", s.Weighting)
 }
 
+// CorrectAttempt records a correct attempt
 func (s *Stats) CorrectAttempt() {
 	s.Attempts++
 	s.Correct++
@@ -31,6 +35,7 @@ func (s *Stats) CorrectAttempt() {
 	logrus.Info("Correct \t | ", s.String())
 }
 
+// WrongAttempt records an incorrect attempt
 func (s *Stats) WrongAttempt() {
 	s.Attempts++
 	s.update()

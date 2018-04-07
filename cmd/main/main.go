@@ -1,16 +1,14 @@
 package main
 
-import (
-	. "github.com/johnmcdnl/flashcards"
-)
+import "github.com/johnmcdnl/flashcards"
 
 func main() {
 
 	// var deck = NewDeck("deck.db")
-	var deck = NewDeckWithSize("deck.db", 100, 125, false)
+	var deck = flashcards.NewDeckWithSize("deck.db", 100, 125, false)
 
-	deck.Know = English
-	deck.Learning = Russian
+	deck.Know = flashcards.English
+	deck.Learning = flashcards.Russian
 
 	for i := 1; i <= 3; i++ {
 		deck.Next()

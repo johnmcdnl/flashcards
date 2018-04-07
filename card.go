@@ -10,11 +10,13 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
+// Card is a single card in the deck
 type Card struct {
 	ID     ID      `json:"-"`
 	Phrase *Phrase `json:"phrase,omitempty"`
 }
 
+// ShuffleCards reorders items in the slice of cards using a PRNG
 func ShuffleCards(cards []*Card) {
 	for i := range cards {
 		j := rand.Intn(i + 1)
@@ -22,6 +24,7 @@ func ShuffleCards(cards []*Card) {
 	}
 }
 
+// NewCard generates a new card to represdent a single phrase
 func NewCard(p *Phrase) *Card {
 	return &Card{
 		ID:     NewID(),
@@ -29,6 +32,7 @@ func NewCard(p *Phrase) *Card {
 	}
 }
 
+// PrintQuestion is a pretty formatter for command line version of rendering the card
 func (c *Card) PrintQuestion(deck *Deck) {
 	if deck.Know == "" || deck.Learning == "" {
 		panic(fmt.Sprintf("Something isn't set -- Know: %s -- Learning: %s", deck.Know, deck.Learning))
@@ -50,6 +54,7 @@ func (c *Card) PrintQuestion(deck *Deck) {
 	fmt.Println(msg)
 }
 
+// AttemptAnswer accepts an answer from a user and checks whether it is correct
 func (c *Card) AttemptAnswer(know, learning Language, attempt string) {
 
 	if attempt == "" {
@@ -73,14 +78,6 @@ func (c *Card) AttemptAnswer(know, learning Language, attempt string) {
 		)
 	}
 
-	// if strings.EqualFold(correctValue, attempt) {
-	// 	c.Phrase.Language(learning).Stats.CorrectAttempt()
-	// } else {
-	// 	c.Phrase.Language(learning).Stats.WrongAttempt()
-	// 	logrus.Errorf("| %s \t | %s \t | %s \t | ",
-	// 		attempt, correctValue, correctPhonetic)
-	// }
-
 }
 
 func readString() string {
@@ -90,5 +87,4 @@ func readString() string {
 	input = strings.Trim(input, " ")
 	input = strings.Trim(input, "\n")
 	return input
-
 }

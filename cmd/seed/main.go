@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	. "github.com/johnmcdnl/flashcards"
+	"github.com/johnmcdnl/flashcards"
 	"github.com/sirupsen/logrus"
 )
 
@@ -18,7 +18,7 @@ func main() {
 	parseGeneralServiceList()
 }
 
-func parseAll(dir string, source, target Language) {
+func parseAll(dir string, source, target flashcards.Language) {
 	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
 		if strings.HasSuffix(path, ".csv") {
 			data, err := ioutil.ReadFile(path)
@@ -37,7 +37,7 @@ func parseVerbs() {
 	if err != nil {
 		logrus.Fatal(err)
 	}
-	parse(English, Russian, data)
+	parse(flashcards.English, flashcards.Russian, data)
 
 }
 
@@ -47,7 +47,7 @@ func parseNouns() {
 	if err != nil {
 		logrus.Fatal(err)
 	}
-	parse(English, Russian, data)
+	parse(flashcards.English, flashcards.Russian, data)
 
 }
 
@@ -57,23 +57,23 @@ func parseGeneralServiceList() {
 	if err != nil {
 		logrus.Fatal(err)
 	}
-	parse(English, Russian, data)
+	parse(flashcards.English, flashcards.Russian, data)
 
 }
 
-func parse(source, target Language, data []byte) {
+func parse(source, target flashcards.Language, data []byte) {
 
 	records, err := csv.NewReader(bytes.NewReader(data)).ReadAll()
 	if err != nil {
 		logrus.Fatal(err)
 	}
 
-	var deck = NewDeck("deck.db")
+	var deck = flashcards.NewDeck("deck.db")
 	logrus.Infof("Len of deck: %d", len(deck.Cards))
 
 	for _, row := range records {
 
-		var needsToSeed bool = true
+		var needsToSeed = true
 
 		for _, c := range deck.Cards {
 			if c.Phrase.Language(source).Value == row[0] {
@@ -87,10 +87,10 @@ func parse(source, target Language, data []byte) {
 
 		logrus.Infoln("Seeding", row)
 		deck.WithCard(
-			NewCard(NewPhrase().WithTranslation(
-				NewTranslation(source, row[0])).WithTranslation(
-				NewTranslation(target, row[1]).WithPhonetic(
-					NewPhonetic(source, row[2])))))
+			flashcards.NewCard(flashcards.NewPhrase().WithTranslation(
+				flashcards.NewTranslation(source, row[0])).WithTranslation(
+				flashcards.NewTranslation(target, row[1]).WithPhonetic(
+					flashcards.NewPhonetic(source, row[2])))))
 
 	}
 	deck.SaveState()

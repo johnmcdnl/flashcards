@@ -17,6 +17,7 @@ func init() {
 
 const phrasesBucket = "phrasesBucket"
 
+// Deck is a parennt for a group of cards
 type Deck struct {
 	dbPath   string
 	ID       ID       `json:"-"`
@@ -28,6 +29,7 @@ type Deck struct {
 	Cards    []*Card `json:"cards,omitempty"`
 }
 
+// NewDeckWithSize extracts a subset of NewDeck
 func NewDeckWithSize(path string, start, end int, shuffle bool) *Deck {
 	deck := NewDeck(path)
 
@@ -40,6 +42,7 @@ func NewDeckWithSize(path string, start, end int, shuffle bool) *Deck {
 	return deck
 }
 
+// NewDeck generates a deck with all known phrases
 func NewDeck(path string) *Deck {
 	if path == "" {
 		path = "deck.db"
@@ -69,6 +72,7 @@ func NewDeck(path string) *Deck {
 	return &deck
 }
 
+// SaveState saves the current state of the deck
 func (d *Deck) SaveState() {
 	d.saveStateToBucket(phrasesBucket)
 }
@@ -98,11 +102,14 @@ func (d *Deck) saveStateToBucket(bucketName string) {
 		logrus.Fatalf("SaveState 2 %s", err)
 	}
 }
+
+// WithCard adds a new card to the deck
 func (d *Deck) WithCard(c *Card) *Deck {
 	d.Cards = append(d.Cards, c)
 	return d
 }
 
+// Next takes the first card from the deck
 func (d *Deck) Next() *Card {
 
 	if len(d.subdeck) > 0 {
@@ -136,11 +143,13 @@ func (d *Deck) next(cards []*Card) *Card {
 	return d.Current
 }
 
+// Shuffle reorders all cards in the deck
 func (d *Deck) Shuffle() {
 
 	ShuffleCards(d.Cards)
 }
 
+// GetIncorrectGuesses gets a set of incorrect answers
 func (d *Deck) GetIncorrectGuesses(correct *Card, n int) []*Card {
 
 	if len(d.Cards) == n {
