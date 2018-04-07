@@ -7,9 +7,5 @@ type ID string
 
 // NewID generates a new unique identifer
 func NewID() ID {
-	u, err := uuid.NewV4()
-	if err != nil {
-		panic(err)
-	}
-	return ID(u.String())
+	return ID(uuid.NewV4().String())
 }
