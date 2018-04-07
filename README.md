@@ -1,5 +1,6 @@
 # Flashcards
 
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 [![Go Report Card](https://goreportcard.com/badge/github.com/johnmcdnl/flashcards)](https://goreportcard.com/report/github.com/johnmcdnl/flashcards)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0ff3da47e33146029b5b5fba2bc21510)](https://www.codacy.com/app/johnmcdnl/flashcards?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=johnmcdnl/flashcards&amp;utm_campaign=Badge_Grade)
 
