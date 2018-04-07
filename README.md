@@ -4,7 +4,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/johnmcdnl/flashcards)](https://goreportcard.com/report/github.com/johnmcdnl/flashcards)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0ff3da47e33146029b5b5fba2bc21510)](https://www.codacy.com/app/johnmcdnl/flashcards?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=johnmcdnl/flashcards&amp;utm_campaign=Badge_Grade)
 [![Build Status](https://travis-ci.org/johnmcdnl/flashcards.svg?branch=master)](https://travis-ci.org/johnmcdnl/flashcards)
-[![Coverage Status](https://coveralls.io/repos/github/johnmcdnl/flashcards/badge.svg?branch=master)](https://coveralls.io/github/johnmcdnl/flashcards?branch=master)
+[![codecov](https://codecov.io/gh/johnmcdnl/flashcards/branch/master/graph/badge.svg)](https://codecov.io/gh/johnmcdnl/flashcards)
 
 Simulate a set of flashcards to help learn a new language
 
