@@ -6,9 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/sirupsen/logrus"
-
 	"github.com/boltdb/bolt"
+	"github.com/sirupsen/logrus"
 )
 
 func init() {
@@ -44,6 +43,15 @@ func NewDeckWithSize(path string, start, end int, shuffle bool) *Deck {
 
 // NewDeck generates a deck with all known phrases
 func NewDeck(path string) *Deck {
+	deck := newDeck(path)
+	if len(deck.Cards) == 0 {
+		seed()
+		deck = newDeck(path)
+	}
+	return deck
+}
+
+func newDeck(path string) *Deck {
 	if path == "" {
 		path = "deck.db"
 	}

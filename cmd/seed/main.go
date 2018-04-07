@@ -15,19 +15,6 @@ func main() {
 	parseGeneralServiceList()
 }
 
-// func parseAll(dir string, source, target flashcards.Language) {
-// 	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
-// 		if strings.HasSuffix(path, ".csv") {
-// 			data, err := ioutil.ReadFile(path)
-// 			if err != nil {
-// 				logrus.Fatal(err)
-// 			}
-// 			parse(source, target, data)
-// 		}
-// 		return nil
-// 	})
-// }
-
 func parseVerbs() {
 
 	data, err := ioutil.ReadFile("./cmd/seed/verbs.csv")
