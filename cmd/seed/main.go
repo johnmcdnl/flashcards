@@ -4,9 +4,6 @@ import (
 	"bytes"
 	"encoding/csv"
 	"io/ioutil"
-	"os"
-	"path/filepath"
-	"strings"
 
 	"github.com/johnmcdnl/flashcards"
 	"github.com/sirupsen/logrus"
@@ -18,18 +15,18 @@ func main() {
 	parseGeneralServiceList()
 }
 
-func parseAll(dir string, source, target flashcards.Language) {
-	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
-		if strings.HasSuffix(path, ".csv") {
-			data, err := ioutil.ReadFile(path)
-			if err != nil {
-				logrus.Fatal(err)
-			}
-			parse(source, target, data)
-		}
-		return nil
-	})
-}
+// func parseAll(dir string, source, target flashcards.Language) {
+// 	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
+// 		if strings.HasSuffix(path, ".csv") {
+// 			data, err := ioutil.ReadFile(path)
+// 			if err != nil {
+// 				logrus.Fatal(err)
+// 			}
+// 			parse(source, target, data)
+// 		}
+// 		return nil
+// 	})
+// }
 
 func parseVerbs() {
 
