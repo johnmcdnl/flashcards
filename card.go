@@ -33,7 +33,7 @@ func NewCard(p *Phrase) *Card {
 }
 
 // PrintQuestion is a pretty formatter for command line version of rendering the card
-func (c *Card) PrintQuestion(deck *Deck) {
+func (c *Card) PrintQuestion(deck *Deck) string {
 	if deck.Know == "" || deck.Learning == "" {
 		panic(fmt.Sprintf("Something isn't set -- Know: %s -- Learning: %s", deck.Know, deck.Learning))
 	}
@@ -51,7 +51,7 @@ func (c *Card) PrintQuestion(deck *Deck) {
 		msg = fmt.Sprintf("%s \n \t %d) %s", msg, i+1, o.Phrase.Language(deck.Know).Value)
 	}
 
-	fmt.Println(msg)
+	return msg
 }
 
 // AttemptAnswer accepts an answer from a user and checks whether it is correct

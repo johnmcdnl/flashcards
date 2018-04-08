@@ -1,6 +1,10 @@
 package main
 
-import "github.com/johnmcdnl/flashcards"
+import (
+	"fmt"
+
+	"github.com/johnmcdnl/flashcards"
+)
 
 func main() {
 
@@ -12,7 +16,7 @@ func main() {
 
 	for i := 1; i <= 3; i++ {
 		deck.Next()
-		deck.Current.PrintQuestion(deck)
+		fmt.Println(deck.Current.PrintQuestion(deck))
 		deck.Current.AttemptAnswer(deck.Know, deck.Learning, "")
 		deck.SaveState()
 	}
