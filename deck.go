@@ -22,7 +22,8 @@ func init() {
 
 const phrasesBucket = "phrasesBucket"
 
-const DeckName = "flashcardsDeck.db"
+// DefaultDeckName is the default deck db
+const DefaultDeckName = "flashcardsDeck.db"
 
 // Deck is a parennt for a group of cards
 type Deck struct {
@@ -49,8 +50,9 @@ func NewDeckWithSize(path string, start, end int, shuffle bool) *Deck {
 	return deck
 }
 
+// NewStandardDeck returns a deck with sensible defaults
 func NewStandardDeck() *Deck {
-	return NewDeck(DeckName)
+	return NewDeck(DefaultDeckName)
 }
 
 // NewDeck generates a deck with all known phrases
@@ -65,7 +67,7 @@ func NewDeck(path string) *Deck {
 
 func newDeck(path string) *Deck {
 	if path == "" {
-		path = DeckName
+		path = DefaultDeckName
 	}
 	db, err := bolt.Open(path, os.ModePerm, &bolt.Options{ReadOnly: false})
 	if err != nil {
@@ -160,7 +162,7 @@ func (d *Deck) SaveState() {
 
 func (d *Deck) saveStateToBucket(bucketName string) {
 	if d.dbPath == "" {
-		d.dbPath = DeckName
+		d.dbPath = DefaultDeckName
 	}
 
 	db, err := bolt.Open(d.dbPath, os.ModePerm, &bolt.Options{ReadOnly: false})
