@@ -3,46 +3,57 @@ package flashcards
 import (
 	"bytes"
 	"encoding/csv"
+	"go/build"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
+	"sync"
 
 	"github.com/sirupsen/logrus"
 )
 
-func seed() {
-	parseAll("./cmd/seed", English, Russian)
-}
+var once sync.Once
 
-func parseAll(dir string, source, target Language) {
+func (d *Deck) seed() {
+
+	dir := filepath.Join(build.Default.GOPATH,
+		"src", "github.com", "johnmcdnl", "flashcards")
+
+	// parseAll(path, English, Russian)
+
 	filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
+		logrus.Info("seed.parseAll", dir)
+		// panic(dir)
 		if strings.HasSuffix(path, ".csv") {
 			data, err := ioutil.ReadFile(path)
 			if err != nil {
 				logrus.Fatal(err)
 			}
-			parse(source, target, data)
+			// TODO - this should be able to read CSV header column to know lanuage
+			d.parse(d.Know, d.Learning, data)
 		}
 		return nil
 	})
+
 }
 
-func parse(source, target Language, data []byte) {
+// TODO - this should be able to read CSV header column to know lanuage
+func (d *Deck) parse(source, target Language, data []byte) {
 
 	records, err := csv.NewReader(bytes.NewReader(data)).ReadAll()
 	if err != nil {
 		logrus.Fatal(err)
 	}
 
-	var deck = NewDeck("deck.db")
-	logrus.Infof("Len of deck: %d", len(deck.Cards))
+	// var deck = NewDeck(DeckName)
+	logrus.Infof("Len of deck: %d", len(d.Cards))
 
 	for _, row := range records {
 
 		var needsToSeed = true
 
-		for _, c := range deck.Cards {
+		for _, c := range d.Cards {
 			if c.Phrase.Language(source).Value == row[0] {
 				needsToSeed = false
 			}
@@ -53,12 +64,12 @@ func parse(source, target Language, data []byte) {
 		}
 
 		logrus.Infoln("Seeding", row)
-		deck.WithCard(
+		d.WithCard(
 			NewCard(NewPhrase().WithTranslation(
 				NewTranslation(source, row[0])).WithTranslation(
 				NewTranslation(target, row[1]).WithPhonetic(
 					NewPhonetic(source, row[2])))))
 
 	}
-	deck.SaveState()
+	d.SaveState()
 }

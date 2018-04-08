@@ -4,8 +4,8 @@ import "github.com/johnmcdnl/flashcards"
 
 func main() {
 
-	// var deck = NewDeck("deck.db")
-	var deck = flashcards.NewDeckWithSize("deck.db", 100, 125, false)
+	var deck = flashcards.NewStandardDeck()
+	// var deck = flashcards.NewDeckWithSize(flashcards.DeckName, 100, 125, false)
 
 	deck.Know = flashcards.English
 	deck.Learning = flashcards.Russian

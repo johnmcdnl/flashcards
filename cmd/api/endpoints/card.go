@@ -10,7 +10,7 @@ import (
 var deck *flashcards.Deck
 
 func init() {
-	deck = flashcards.NewDeckWithSize("deck.db", 100, 125, false)
+	deck = flashcards.NewDeckWithSize(flashcards.DeckName, 100, 125, false)
 	deck.Know = flashcards.English
 	deck.Learning = flashcards.Russian
 }

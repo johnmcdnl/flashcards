@@ -52,7 +52,7 @@ func parse(source, target flashcards.Language, data []byte) {
 		logrus.Fatal(err)
 	}
 
-	var deck = flashcards.NewDeck("deck.db")
+	var deck = flashcards.NewDeck(flashcards.DeckName)
 	logrus.Infof("Len of deck: %d", len(deck.Cards))
 
 	for _, row := range records {

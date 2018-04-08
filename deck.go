@@ -16,6 +16,8 @@ func init() {
 
 const phrasesBucket = "phrasesBucket"
 
+const DeckName = "flashcardsDeck.db"
+
 // Deck is a parennt for a group of cards
 type Deck struct {
 	dbPath   string
@@ -41,19 +43,23 @@ func NewDeckWithSize(path string, start, end int, shuffle bool) *Deck {
 	return deck
 }
 
+func NewStandardDeck() *Deck {
+	return NewDeck(DeckName)
+}
+
 // NewDeck generates a deck with all known phrases
 func NewDeck(path string) *Deck {
-	deck := newDeck(path)
-	if len(deck.Cards) == 0 {
-		seed()
-		deck = newDeck(path)
+	d := newDeck(path)
+	if len(d.Cards) == 0 {
+		d.seed()
+		return NewDeck(path)
 	}
-	return deck
+	return d
 }
 
 func newDeck(path string) *Deck {
 	if path == "" {
-		path = "deck.db"
+		path = DeckName
 	}
 	db, err := bolt.Open(path, os.ModePerm, &bolt.Options{ReadOnly: false})
 	if err != nil {
@@ -77,6 +83,8 @@ func newDeck(path string) *Deck {
 		logrus.Fatalf("NewDeck 2 %s", err)
 	}
 	deck.dbPath = path
+	deck.Know = English
+	deck.Learning = Russian
 	return &deck
 }
 
@@ -87,7 +95,7 @@ func (d *Deck) SaveState() {
 
 func (d *Deck) saveStateToBucket(bucketName string) {
 	if d.dbPath == "" {
-		d.dbPath = "deck.db"
+		d.dbPath = DeckName
 	}
 
 	db, err := bolt.Open(d.dbPath, os.ModePerm, &bolt.Options{ReadOnly: false})
