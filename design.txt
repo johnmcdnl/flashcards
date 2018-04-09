@@ -17,9 +17,7 @@ Stats
 
 Phrase
 	Translations []Translation
-	Known() Translation
-	Learning() Translation
-	GetTranslation(l Lanuage)
+	GetTranslation(l Language)
 
 Translation
     Language
