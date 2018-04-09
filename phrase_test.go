@@ -62,3 +62,17 @@ func TestPhrase_GetTranslation(t *testing.T) {
 	assert.Equal(t, "Здравствуйте", p.GetTranslation(flashcards.Rus).Value)
 
 }
+
+
+func TestPhrase_Attempt(t *testing.T) {
+	var p = new(flashcards.Phrase)
+	p.WithTranslation(
+		flashcards.NewTranslation(flashcards.Eng, "hello")).WithTranslation(
+		flashcards.NewTranslation(flashcards.Rus, "Здравствуйте")).WithTranslation(
+		flashcards.NewTranslation(flashcards.Fra, "bonjour"))
+
+	assert.True(t, p.Attempt(flashcards.Eng, "Hello"))
+	assert.True(t, p.Attempt(flashcards.Eng, "hello"))
+	assert.False(t, p.Attempt(flashcards.Eng, "Здравствуйте"))
+	assert.True(t, p.Attempt(flashcards.Rus, "Здравствуйте"))
+}
