@@ -1,0 +1,29 @@
+Deck
+	[]Card
+
+Card
+	Phrase
+	Get(Language, Value) Phrase
+	Flip()
+	Answer()
+
+Stats
+	From 	Language
+	To 		Language
+	Attempts
+	Correct
+	Percentage()
+	Weighting()
+
+Phrase
+	Translations []Translation
+	Known() Translation
+	Learning() Translation
+	GetTranslation(l Lanuage)
+
+Translation
+    Language
+	Value
+
+Language
+	Name

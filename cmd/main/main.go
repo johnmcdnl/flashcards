@@ -1,13 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"github.com/johnmcdnl/flashcards"
+	"fmt"
 )
 
 func main(){
-	en := flashcards.English
-	  ru := flashcards.Russian
-	fmt.Println(en)
-	fmt.Println(ru)
+	fmt.Println(flashcards.Eng)
+	fmt.Println(flashcards.Rus)
+	fmt.Println(flashcards.Fra)
 }

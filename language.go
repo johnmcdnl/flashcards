@@ -1,20 +1,15 @@
 package flashcards
 
-
-// Defined Languages
+// Defined  ISO 639 Languages
 var (
-	English = language{name: "English", native: "english", isoCode:"en"}
-	Eng = English
-	 Russian = language{name: "Russian", native: "русский", isoCode:"ru"}
-	 Rus = Russian
-	 French = language{name: "French", native: "français", isoCode:"fr"}
-	 Fra = French
+	Eng = Language{name: "English", native: "english", isoCode: "en"}
+	Rus = Language{name: "Russian", native: "русский", isoCode: "ru"}
+	Fra = Language{name: "French", native: "français", isoCode: "fr"}
 )
 
 //Language represents a ISO 639 Language
-type language struct{
-	name string 
-	native string 
-	isoCode string 
+type Language struct {
+	name    string
+	native  string
+	isoCode string
 }
-
