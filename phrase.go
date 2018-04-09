@@ -6,8 +6,16 @@ type Phrase struct {
 	Translations []*Translation
 }
 
+//NewPhrase returns a new phrase
+func NewPhrase(t *Translation) *Phrase{
+	return new(Phrase).WithTranslation(t)
+}
+
 //WithTranslation adds a version of the phrase with a specific language
 func (p *Phrase) WithTranslation(t *Translation) *Phrase {
+	if t ==nil{
+		return p
+	}
 	if existing := p.GetTranslation(t.Language); existing != nil {
 		existing.Value = t.Value
 		return p

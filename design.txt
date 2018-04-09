@@ -1,11 +1,10 @@
 Deck
-	[]Card
+	[]Phrase
 
-Card
-	Phrase
-	Get(Language, Value) Phrase
-	Flip()
-	Answer()
+Phrase
+	Translations []Translation
+	GetTranslation(l Language)
+    Answer()
 
 Stats
 	From 	Language
@@ -15,9 +14,7 @@ Stats
 	Percentage()
 	Weighting()
 
-Phrase
-	Translations []Translation
-	GetTranslation(l Language)
+
 
 Translation
     Language

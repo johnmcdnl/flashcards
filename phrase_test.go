@@ -6,8 +6,18 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+func TestNewPhrase(t *testing.T) {
+	var p = flashcards.NewPhrase(nil)
+	assert.Len(t, p.Translations, 0)
+
+	var pWithVal = flashcards.NewPhrase(flashcards.NewTranslation(flashcards.Eng, "hello"))
+	assert.Len(t, pWithVal.Translations, 1)
+	assert.Equal(t,flashcards.Eng, pWithVal.GetTranslation(flashcards.Eng).Language)
+	assert.Equal(t,"hello", pWithVal.GetTranslation(flashcards.Eng).Value)
+}
+
 func TestPhrase_WithTranslation(t *testing.T) {
-	var p = new(flashcards.Phrase)
+	var p = flashcards.NewPhrase(nil)
 
 	assert.Empty(t, p.Translations)
 	assert.Nil(t, p.GetTranslation(flashcards.Eng))
