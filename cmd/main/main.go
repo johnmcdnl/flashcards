@@ -17,5 +17,12 @@ func main() {
 			f.NewTranslation(f.Fr, "bonjour")),
 	)
 
+	deck.With(
+		f.NewPhrase(
+			f.NewTranslation(f.En, "goodbye")).With(
+			f.NewTranslation(f.Ru, "POKA").With(f.NewPhonetic(f.En, "poka"))).With(
+			f.NewTranslation(f.Fr, "au revouir")),
+	)
+
 	logrus.Info(deck)
 }

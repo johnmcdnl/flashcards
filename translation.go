@@ -1,5 +1,7 @@
 package flashcards
 
+import "github.com/sirupsen/logrus"
+
 type Translation struct {
 	//ID                    `json:"id"`
 	Language
@@ -8,6 +10,7 @@ type Translation struct {
 }
 
 func NewTranslation(l Language, v string) *Translation {
+	logrus.Debugln(`func NewTranslation(l Language, v string) *Translation {`, l, v)
 	return &Translation{
 		//ID: newID(),
 		Language: l,
@@ -15,14 +18,15 @@ func NewTranslation(l Language, v string) *Translation {
 	}
 }
 
-func (t *Translation) String() string {
-	return jsonString(t)
-}
-
 func (t *Translation) With(p *Phonetic) *Translation {
+	logrus.Debugln(`func (t *Translation) With(p *Phonetic) *Translation {`, p)
 	if p == nil {
 		return t
 	}
 	t.Phonetics = append(t.Phonetics, p)
 	return t
+}
+
+func (t *Translation) String() string {
+	return jsonString(t)
 }

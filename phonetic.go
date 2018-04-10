@@ -1,14 +1,15 @@
 package flashcards
 
+import "github.com/sirupsen/logrus"
+
 type Phonetic struct {
-	//ID           `json:"id"`
 	Language
 	Value string `json:"value"`
 }
 
 func NewPhonetic(l Language, v string) *Phonetic {
+	logrus.Debugln(`func NewPhonetic(l Language, v string) *Phonetic {`, l, v)
 	return &Phonetic{
-		//ID:       newID(),
 		Language: l,
 		Value:    v,
 	}

@@ -1,6 +1,8 @@
 package flashcards
 
-import "encoding/json"
+import (
+	"encoding/json"
+)
 
 func jsonString(i interface{})string{
 	j, err := json.Marshal(i)
