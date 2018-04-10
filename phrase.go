@@ -10,6 +10,10 @@ func NewPhrase(t *Translation) *Phrase {
 	return p.With(t)
 }
 
+func (p *Phrase) String() string {
+	return jsonString(p)
+}
+
 func (p *Phrase) With(t *Translation) *Phrase {
 	if t == nil{
 		return p

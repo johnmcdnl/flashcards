@@ -6,14 +6,18 @@ type Translation struct {
 	Phonetics []*Phonetic
 }
 
-func NewTranslation(p *Phonetic)*Translation{
+func NewTranslation(p *Phonetic) *Translation {
 	var t Translation
 
 	return t.With(p)
 }
 
-func (t *Translation)With(p *Phonetic)*Translation{
-	if p == nil{
+func (t *Translation) String() string {
+	return jsonString(t)
+}
+
+func (t *Translation) With(p *Phonetic) *Translation {
+	if p == nil {
 		return t
 	}
 	t.Phonetics = append(t.Phonetics, p)

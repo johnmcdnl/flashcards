@@ -10,6 +10,10 @@ func NewDeck(p *Phrase) *Deck {
 	return d.With(p)
 }
 
+func (d *Deck) String() string {
+	return jsonString(d)
+}
+
 func (d *Deck) With(p *Phrase) *Deck {
 	if p == nil {
 		return d
