@@ -45,6 +45,7 @@ func (p *Phrase) Attempt(attemptLang, targetLang Language, attempt string) bool 
 	return isSuccessful
 }
 
+//GetStats gets a user stats for a src and target language combo
 func (p *Phrase) GetStats(src, target Language) *Stats {
 	for _, s := range p.Stats {
 		if s.Source == src && s.Target == target {
