@@ -1,15 +1,18 @@
 package flashcards
 
 type Translation struct {
+	//ID                    `json:"id"`
 	Language
-	Value     string
-	Phonetics []*Phonetic
+	Value     string      `json:"value"`
+	Phonetics []*Phonetic `json:"phonetics,omitempty"`
 }
 
-func NewTranslation(p *Phonetic) *Translation {
-	var t Translation
-
-	return t.With(p)
+func NewTranslation(l Language, v string) *Translation {
+	return &Translation{
+		//ID: newID(),
+		Language: l,
+		Value:    v,
+	}
 }
 
 func (t *Translation) String() string {

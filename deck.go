@@ -1,11 +1,13 @@
 package flashcards
 
 type Deck struct {
-	Phrases []*Phrase
+	//ID                `json:"id"`
+	Phrases []*Phrase `json:"phrases"`
 }
 
 func NewDeck(p *Phrase) *Deck {
 	var d Deck
+	//d.ID = newID()
 
 	return d.With(p)
 }
