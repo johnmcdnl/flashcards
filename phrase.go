@@ -6,6 +6,7 @@ import "strings"
 // It contains how the linguistic meaning is represented in various languages
 type Phrase struct {
 	Translations []*Translation
+	Stats        []*Stats
 }
 
 //NewPhrase returns a new phrase
@@ -38,10 +39,22 @@ func (p *Phrase) GetTranslation(l Language) *Translation {
 }
 
 //Attempt gives the user a change to see if they understand a phrase
-func (p *Phrase) Attempt(attemptLanguage Language, attempt string) bool {
-	correct := p.GetTranslation(attemptLanguage)
-	if !strings.EqualFold(correct.Value, attempt) {
-		return false
+func (p *Phrase) Attempt(attemptLang, targetLang Language, attempt string) bool {
+	isSuccessful := strings.EqualFold(p.GetTranslation(attemptLang).Value, attempt)
+	p.GetStats(attemptLang, targetLang).Record(isSuccessful)
+	return isSuccessful
+}
+
+func (p *Phrase) GetStats(src, target Language) *Stats {
+	for _, s := range p.Stats {
+		if s.Source == src && s.Target == target {
+			return s
+		}
 	}
-	return true
+	s := &Stats{
+		Source: src,
+		Target: target,
+	}
+	p.Stats = append(p.Stats, s)
+	return s
 }

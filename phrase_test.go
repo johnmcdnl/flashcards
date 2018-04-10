@@ -71,8 +71,42 @@ func TestPhrase_Attempt(t *testing.T) {
 		flashcards.NewTranslation(flashcards.Rus, "Здравствуйте")).WithTranslation(
 		flashcards.NewTranslation(flashcards.Fra, "bonjour"))
 
-	assert.True(t, p.Attempt(flashcards.Eng, "Hello"))
-	assert.True(t, p.Attempt(flashcards.Eng, "hello"))
-	assert.False(t, p.Attempt(flashcards.Eng, "Здравствуйте"))
-	assert.True(t, p.Attempt(flashcards.Rus, "Здравствуйте"))
+	assert.True(t, p.Attempt(flashcards.Eng, flashcards.Rus, "Hello"))
+	assert.True(t, p.Attempt(flashcards.Eng, flashcards.Rus, "hello"))
+	assert.False(t, p.Attempt(flashcards.Eng, flashcards.Rus, "Здравствуйте"))
+	assert.True(t, p.Attempt(flashcards.Rus, flashcards.Eng, "Здравствуйте"))
+}
+
+func TestPhrase_GetStats(t *testing.T) {
+	var p = new(flashcards.Phrase)
+	p.WithTranslation(
+		flashcards.NewTranslation(flashcards.Eng, "hello")).WithTranslation(
+		flashcards.NewTranslation(flashcards.Rus, "Здравствуйте")).WithTranslation(
+		flashcards.NewTranslation(flashcards.Fra, "bonjour"))
+
+	assert.Equal(t, flashcards.Eng, p.GetStats(flashcards.Eng, flashcards.Rus).Source)
+	assert.Equal(t, flashcards.Rus, p.GetStats(flashcards.Eng, flashcards.Rus).Target)
+	assert.Equal(t, 0, p.GetStats(flashcards.Eng, flashcards.Rus).Attempts)
+	assert.Equal(t, 0, p.GetStats(flashcards.Eng, flashcards.Rus).Correct)
+
+	p.Attempt(flashcards.Eng, flashcards.Rus, "hello")
+	assert.Equal(t, 1, p.GetStats(flashcards.Eng, flashcards.Rus).Attempts)
+	assert.Equal(t, 1, p.GetStats(flashcards.Eng, flashcards.Rus).Correct)
+	p.Attempt(flashcards.Eng, flashcards.Rus,"wrong")
+	assert.Equal(t, 2, p.GetStats(flashcards.Eng, flashcards.Rus).Attempts)
+	assert.Equal(t, 1, p.GetStats(flashcards.Eng, flashcards.Rus).Correct)
+
+	p.Attempt(flashcards.Rus, flashcards.Eng,"Здравствуйте")
+	assert.Equal(t, 1, p.GetStats(flashcards.Rus, flashcards.Eng).Attempts)
+	assert.Equal(t, 1, p.GetStats(flashcards.Rus, flashcards.Eng).Correct)
+
+	p.Attempt(flashcards.Rus, flashcards.Eng,"австЗдретвуй")
+	assert.Equal(t, 2, p.GetStats(flashcards.Rus, flashcards.Eng).Attempts)
+	assert.Equal(t, 1, p.GetStats(flashcards.Rus, flashcards.Eng).Correct)
+
+	p.Attempt(flashcards.Rus, flashcards.Eng,"Здравствуйте")
+	assert.Equal(t, 3, p.GetStats(flashcards.Rus, flashcards.Eng).Attempts)
+	assert.Equal(t, 2, p.GetStats(flashcards.Rus, flashcards.Eng).Correct)
+
+
 }
