@@ -1,0 +1,2304 @@
+{
+  "phrases": [
+    {
+      "id": "fccf",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "time"
+        },
+        {
+          "langCode": "fr",
+          "value": "temps"
+        },
+        {
+          "langCode": "ru",
+          "value": "время",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vremya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c530",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "year"
+        },
+        {
+          "langCode": "fr",
+          "value": "an"
+        },
+        {
+          "langCode": "ru",
+          "value": "год",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "god"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "59dc",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "people"
+        },
+        {
+          "langCode": "fr",
+          "value": "gens"
+        },
+        {
+          "langCode": "ru",
+          "value": "люди",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "lyudi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b3a9",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "way"
+        },
+        {
+          "langCode": "fr",
+          "value": "façon"
+        },
+        {
+          "langCode": "ru",
+          "value": "путь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "put'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e0c9",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "day"
+        },
+        {
+          "langCode": "fr",
+          "value": "journée"
+        },
+        {
+          "langCode": "ru",
+          "value": "день",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "den'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9e71",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "man"
+        },
+        {
+          "langCode": "fr",
+          "value": "homme"
+        },
+        {
+          "langCode": "ru",
+          "value": "человек",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "chelovek"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b4b2",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "thing"
+        },
+        {
+          "langCode": "fr",
+          "value": "chose"
+        },
+        {
+          "langCode": "ru",
+          "value": "вещь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "veshch'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5d51",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "woman"
+        },
+        {
+          "langCode": "fr",
+          "value": "femme"
+        },
+        {
+          "langCode": "ru",
+          "value": "женщина",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "zhenshchina"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5601",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "life"
+        },
+        {
+          "langCode": "fr",
+          "value": "la vie"
+        },
+        {
+          "langCode": "ru",
+          "value": "жизнь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "zhizn'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1a72",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "child"
+        },
+        {
+          "langCode": "fr",
+          "value": "enfant"
+        },
+        {
+          "langCode": "ru",
+          "value": "ребенок",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "rebenok"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "db7f",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "world"
+        },
+        {
+          "langCode": "fr",
+          "value": "monde"
+        },
+        {
+          "langCode": "ru",
+          "value": "Мир",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Mir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7564",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "school"
+        },
+        {
+          "langCode": "fr",
+          "value": "école"
+        },
+        {
+          "langCode": "ru",
+          "value": "школа",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "shkola"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dda5",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "state"
+        },
+        {
+          "langCode": "fr",
+          "value": "Etat"
+        },
+        {
+          "langCode": "ru",
+          "value": "государство",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "gosudarstvo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e56b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "family"
+        },
+        {
+          "langCode": "fr",
+          "value": "famille"
+        },
+        {
+          "langCode": "ru",
+          "value": "семья",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "sem'ya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bc1f",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "student"
+        },
+        {
+          "langCode": "fr",
+          "value": "étudiant"
+        },
+        {
+          "langCode": "ru",
+          "value": "студент",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "student"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6d1c",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "group"
+        },
+        {
+          "langCode": "fr",
+          "value": "groupe"
+        },
+        {
+          "langCode": "ru",
+          "value": "группа",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "gruppa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9f7b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "country"
+        },
+        {
+          "langCode": "fr",
+          "value": "pays"
+        },
+        {
+          "langCode": "ru",
+          "value": "страна",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "strana"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1fc3",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "problem"
+        },
+        {
+          "langCode": "fr",
+          "value": "problème"
+        },
+        {
+          "langCode": "ru",
+          "value": "проблема",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "problema"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3000",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "hand"
+        },
+        {
+          "langCode": "fr",
+          "value": "main"
+        },
+        {
+          "langCode": "ru",
+          "value": "рука",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "ruka"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2696",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "part"
+        },
+        {
+          "langCode": "fr",
+          "value": "partie"
+        },
+        {
+          "langCode": "ru",
+          "value": "часть",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "chast'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "53cf",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "place"
+        },
+        {
+          "langCode": "fr",
+          "value": "endroit"
+        },
+        {
+          "langCode": "ru",
+          "value": "место",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "mesto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c296",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "case"
+        },
+        {
+          "langCode": "fr",
+          "value": "Cas"
+        },
+        {
+          "langCode": "ru",
+          "value": "дело",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "delo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ef15",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "week"
+        },
+        {
+          "langCode": "fr",
+          "value": "la semaine"
+        },
+        {
+          "langCode": "ru",
+          "value": "неделю",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "nedelyu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8f7b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "company"
+        },
+        {
+          "langCode": "fr",
+          "value": "compagnie"
+        },
+        {
+          "langCode": "ru",
+          "value": "Компания",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Kompaniya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4ce9",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "system"
+        },
+        {
+          "langCode": "fr",
+          "value": "système"
+        },
+        {
+          "langCode": "ru",
+          "value": "система",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "sistema"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b7ca",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "program"
+        },
+        {
+          "langCode": "fr",
+          "value": "programme"
+        },
+        {
+          "langCode": "ru",
+          "value": "программа",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "programma"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7a4f",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "question"
+        },
+        {
+          "langCode": "fr",
+          "value": "question"
+        },
+        {
+          "langCode": "ru",
+          "value": "вопрос",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vopros"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d263",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "work"
+        },
+        {
+          "langCode": "fr",
+          "value": "travail"
+        },
+        {
+          "langCode": "ru",
+          "value": "Работа",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Rabota"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d9c8",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "government"
+        },
+        {
+          "langCode": "fr",
+          "value": "gouvernement"
+        },
+        {
+          "langCode": "ru",
+          "value": "правительство",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "pravitel'stvo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3239",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "number"
+        },
+        {
+          "langCode": "fr",
+          "value": "nombre"
+        },
+        {
+          "langCode": "ru",
+          "value": "номер",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "nomer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8878",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "night"
+        },
+        {
+          "langCode": "fr",
+          "value": "nuit"
+        },
+        {
+          "langCode": "ru",
+          "value": "ночь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "noch'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8a64",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "point"
+        },
+        {
+          "langCode": "fr",
+          "value": "point"
+        },
+        {
+          "langCode": "ru",
+          "value": "точка",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "tochka"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d74c",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "home"
+        },
+        {
+          "langCode": "fr",
+          "value": "maison"
+        },
+        {
+          "langCode": "ru",
+          "value": "Главная",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Glavnaya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "859a",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "water"
+        },
+        {
+          "langCode": "fr",
+          "value": "eau"
+        },
+        {
+          "langCode": "ru",
+          "value": "воды",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vody"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e792",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "room"
+        },
+        {
+          "langCode": "fr",
+          "value": "chambre"
+        },
+        {
+          "langCode": "ru",
+          "value": "комната",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "komnata"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eb84",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "mother"
+        },
+        {
+          "langCode": "fr",
+          "value": "mère"
+        },
+        {
+          "langCode": "ru",
+          "value": "мама",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "mama"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b9f6",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "area"
+        },
+        {
+          "langCode": "fr",
+          "value": "région"
+        },
+        {
+          "langCode": "ru",
+          "value": "площадь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "ploshchad'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c91e",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "money"
+        },
+        {
+          "langCode": "fr",
+          "value": "argent"
+        },
+        {
+          "langCode": "ru",
+          "value": "Деньги",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Den'gi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0855",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "story"
+        },
+        {
+          "langCode": "fr",
+          "value": "récit"
+        },
+        {
+          "langCode": "ru",
+          "value": "история",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "istoriya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6443",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "fact"
+        },
+        {
+          "langCode": "fr",
+          "value": "fait"
+        },
+        {
+          "langCode": "ru",
+          "value": "факт",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "fakt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "95ff",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "month"
+        },
+        {
+          "langCode": "fr",
+          "value": "mois"
+        },
+        {
+          "langCode": "ru",
+          "value": "месяц",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "mesyats"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9317",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "lot"
+        },
+        {
+          "langCode": "fr",
+          "value": "lot"
+        },
+        {
+          "langCode": "ru",
+          "value": "много",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "mnogo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4f54",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "right"
+        },
+        {
+          "langCode": "fr",
+          "value": "droite"
+        },
+        {
+          "langCode": "ru",
+          "value": "правильно",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "pravil'no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20a8",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "study"
+        },
+        {
+          "langCode": "fr",
+          "value": "étude"
+        },
+        {
+          "langCode": "ru",
+          "value": "изучение",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "izucheniye"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7c2e",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "book"
+        },
+        {
+          "langCode": "fr",
+          "value": "livre"
+        },
+        {
+          "langCode": "ru",
+          "value": "книга",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "kniga"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "32e4",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "eye"
+        },
+        {
+          "langCode": "fr",
+          "value": "œil"
+        },
+        {
+          "langCode": "ru",
+          "value": "глаз",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "glaz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b19a",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "job"
+        },
+        {
+          "langCode": "fr",
+          "value": "emploi"
+        },
+        {
+          "langCode": "ru",
+          "value": "работа",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "rabota"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a3d8",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "word"
+        },
+        {
+          "langCode": "fr",
+          "value": "mot"
+        },
+        {
+          "langCode": "ru",
+          "value": "слово",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "slovo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aecc",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "business"
+        },
+        {
+          "langCode": "fr",
+          "value": "Entreprise"
+        },
+        {
+          "langCode": "ru",
+          "value": "бизнес",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "biznes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6b28",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "issue"
+        },
+        {
+          "langCode": "fr",
+          "value": "problème"
+        },
+        {
+          "langCode": "ru",
+          "value": "вопрос",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vopros"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "afcb",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "side"
+        },
+        {
+          "langCode": "fr",
+          "value": "côté"
+        },
+        {
+          "langCode": "ru",
+          "value": "боковая сторона",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "bokovaya storona"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1dfc",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "kind"
+        },
+        {
+          "langCode": "fr",
+          "value": "gentil"
+        },
+        {
+          "langCode": "ru",
+          "value": "своего рода",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "svoyego roda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "733b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "head"
+        },
+        {
+          "langCode": "fr",
+          "value": "tête"
+        },
+        {
+          "langCode": "ru",
+          "value": "глава",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "glava"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b563",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "house"
+        },
+        {
+          "langCode": "fr",
+          "value": "maison"
+        },
+        {
+          "langCode": "ru",
+          "value": "дом",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "dom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2a05",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "service"
+        },
+        {
+          "langCode": "fr",
+          "value": "un service"
+        },
+        {
+          "langCode": "ru",
+          "value": "оказание услуг",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "okazaniye uslug"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6646",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "friend"
+        },
+        {
+          "langCode": "fr",
+          "value": "ami"
+        },
+        {
+          "langCode": "ru",
+          "value": "друг",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "drug"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7af9",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "father"
+        },
+        {
+          "langCode": "fr",
+          "value": "père"
+        },
+        {
+          "langCode": "ru",
+          "value": "отец",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "otets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8e6c",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "power"
+        },
+        {
+          "langCode": "fr",
+          "value": "Puissance"
+        },
+        {
+          "langCode": "ru",
+          "value": "мощность",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "moshchnost'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fbfc",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "hour"
+        },
+        {
+          "langCode": "fr",
+          "value": "heure"
+        },
+        {
+          "langCode": "ru",
+          "value": "час",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "chas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "442c",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "game"
+        },
+        {
+          "langCode": "fr",
+          "value": "Jeu"
+        },
+        {
+          "langCode": "ru",
+          "value": "игра",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "igra"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3a7e",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "line"
+        },
+        {
+          "langCode": "fr",
+          "value": "ligne"
+        },
+        {
+          "langCode": "ru",
+          "value": "линия",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "liniya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9b10",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "end"
+        },
+        {
+          "langCode": "fr",
+          "value": "fin"
+        },
+        {
+          "langCode": "ru",
+          "value": "конец",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "konets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0338",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "member"
+        },
+        {
+          "langCode": "fr",
+          "value": "membre"
+        },
+        {
+          "langCode": "ru",
+          "value": "член",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "chlen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e4b5",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "law"
+        },
+        {
+          "langCode": "fr",
+          "value": "loi"
+        },
+        {
+          "langCode": "ru",
+          "value": "закон",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "zakon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8f6f",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "car"
+        },
+        {
+          "langCode": "fr",
+          "value": "voiture"
+        },
+        {
+          "langCode": "ru",
+          "value": "автомобиль",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "avtomobil'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a64d",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "city"
+        },
+        {
+          "langCode": "fr",
+          "value": "ville"
+        },
+        {
+          "langCode": "ru",
+          "value": "город",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "gorod"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abd0",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "community"
+        },
+        {
+          "langCode": "fr",
+          "value": "communauté"
+        },
+        {
+          "langCode": "ru",
+          "value": "сообщество",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "soobshchestvo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0760",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "name"
+        },
+        {
+          "langCode": "fr",
+          "value": "prénom"
+        },
+        {
+          "langCode": "ru",
+          "value": "имя",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "imya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d522",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "president"
+        },
+        {
+          "langCode": "fr",
+          "value": "Président"
+        },
+        {
+          "langCode": "ru",
+          "value": "президент",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "prezident"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "987d",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "team"
+        },
+        {
+          "langCode": "fr",
+          "value": "équipe"
+        },
+        {
+          "langCode": "ru",
+          "value": "команда",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "komanda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bcd6",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "minute"
+        },
+        {
+          "langCode": "fr",
+          "value": "minute"
+        },
+        {
+          "langCode": "ru",
+          "value": "минут",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "minut"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2a43",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "idea"
+        },
+        {
+          "langCode": "fr",
+          "value": "idée"
+        },
+        {
+          "langCode": "ru",
+          "value": "идея",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "ideya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a069",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "kid"
+        },
+        {
+          "langCode": "fr",
+          "value": "enfant"
+        },
+        {
+          "langCode": "ru",
+          "value": "дитя",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "ditya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c962",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "body"
+        },
+        {
+          "langCode": "fr",
+          "value": "corps"
+        },
+        {
+          "langCode": "ru",
+          "value": "тело",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "telo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c1ce",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "information"
+        },
+        {
+          "langCode": "fr",
+          "value": "information"
+        },
+        {
+          "langCode": "ru",
+          "value": "Информация",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Informatsiya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "329f",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "back"
+        },
+        {
+          "langCode": "fr",
+          "value": "arrière"
+        },
+        {
+          "langCode": "ru",
+          "value": "назад",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "nazad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d9bf",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "parent"
+        },
+        {
+          "langCode": "fr",
+          "value": "parent"
+        },
+        {
+          "langCode": "ru",
+          "value": "родитель",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "roditel'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d082",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "face"
+        },
+        {
+          "langCode": "fr",
+          "value": "visage"
+        },
+        {
+          "langCode": "ru",
+          "value": "лицо",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "litso"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4a85",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "others"
+        },
+        {
+          "langCode": "fr",
+          "value": "autres"
+        },
+        {
+          "langCode": "ru",
+          "value": "другие",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "drugiye"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "832b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "level"
+        },
+        {
+          "langCode": "fr",
+          "value": "niveau"
+        },
+        {
+          "langCode": "ru",
+          "value": "уровень",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "uroven'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5ed1",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "office"
+        },
+        {
+          "langCode": "fr",
+          "value": "Bureau"
+        },
+        {
+          "langCode": "ru",
+          "value": "офис",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "ofis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f6c2",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "door"
+        },
+        {
+          "langCode": "fr",
+          "value": "porte"
+        },
+        {
+          "langCode": "ru",
+          "value": "дверь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "dver'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de78",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "health"
+        },
+        {
+          "langCode": "fr",
+          "value": "santé"
+        },
+        {
+          "langCode": "ru",
+          "value": "здоровье",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "zdorov'ye"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "72ca",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "person"
+        },
+        {
+          "langCode": "fr",
+          "value": "la personne"
+        },
+        {
+          "langCode": "ru",
+          "value": "человек",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "chelovek"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "77a8",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "art"
+        },
+        {
+          "langCode": "fr",
+          "value": "art"
+        },
+        {
+          "langCode": "ru",
+          "value": "Изобразительное искусство",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Izobrazitel'noye iskusstvo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cc6c",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "war"
+        },
+        {
+          "langCode": "fr",
+          "value": "guerre"
+        },
+        {
+          "langCode": "ru",
+          "value": "война",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "voyna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eb65",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "history"
+        },
+        {
+          "langCode": "fr",
+          "value": "histoire"
+        },
+        {
+          "langCode": "ru",
+          "value": "история",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "istoriya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c9af",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "party"
+        },
+        {
+          "langCode": "fr",
+          "value": "fête"
+        },
+        {
+          "langCode": "ru",
+          "value": "вечеринка",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vecherinka"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ff2c",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "result"
+        },
+        {
+          "langCode": "fr",
+          "value": "résultat"
+        },
+        {
+          "langCode": "ru",
+          "value": "результат",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "rezul'tat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10c2",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "change"
+        },
+        {
+          "langCode": "fr",
+          "value": "changement"
+        },
+        {
+          "langCode": "ru",
+          "value": "изменение",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "izmeneniye"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e93b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "morning"
+        },
+        {
+          "langCode": "fr",
+          "value": "Matin"
+        },
+        {
+          "langCode": "ru",
+          "value": "утро",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "utro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6754",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "reason"
+        },
+        {
+          "langCode": "fr",
+          "value": "raison"
+        },
+        {
+          "langCode": "ru",
+          "value": "причина",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "prichina"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5bd6",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "research"
+        },
+        {
+          "langCode": "fr",
+          "value": "recherche"
+        },
+        {
+          "langCode": "ru",
+          "value": "исследование",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "issledovaniye"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2fa1",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "girl"
+        },
+        {
+          "langCode": "fr",
+          "value": "fille"
+        },
+        {
+          "langCode": "ru",
+          "value": "девушка",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "devushka"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7d97",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "guy"
+        },
+        {
+          "langCode": "fr",
+          "value": "gars"
+        },
+        {
+          "langCode": "ru",
+          "value": "парень",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "paren'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b052",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "moment"
+        },
+        {
+          "langCode": "fr",
+          "value": "moment"
+        },
+        {
+          "langCode": "ru",
+          "value": "момент",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "moment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ebd7",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "air"
+        },
+        {
+          "langCode": "fr",
+          "value": "air"
+        },
+        {
+          "langCode": "ru",
+          "value": "воздух",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vozdukh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e22e",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "teacher"
+        },
+        {
+          "langCode": "fr",
+          "value": "prof"
+        },
+        {
+          "langCode": "ru",
+          "value": "учитель",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "uchitel'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "81ab",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "force"
+        },
+        {
+          "langCode": "fr",
+          "value": "Obliger"
+        },
+        {
+          "langCode": "ru",
+          "value": "сила",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "sila"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b022",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "education"
+        },
+        {
+          "langCode": "fr",
+          "value": "éducation"
+        },
+        {
+          "langCode": "ru",
+          "value": "образование",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "obrazovaniye"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

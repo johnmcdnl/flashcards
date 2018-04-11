@@ -27,6 +27,15 @@ func (t *Translation) With(p *Phonetic) *Translation {
 	return t
 }
 
+func (t *Translation) Get(l Language) *Phonetic {
+	for _, p := range t.Phonetics {
+		if t.Language == l {
+			return p
+		}
+	}
+	return nil
+}
+
 func (t *Translation) String() string {
 	return jsonString(t)
 }
