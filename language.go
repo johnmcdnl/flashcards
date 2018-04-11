@@ -33,7 +33,6 @@ func GetLang(code string) Language {
 		}
 	}
 	logrus.Errorln(code)
-	panic("unknown")
 	return Language{name: "unknown", Code: code}
 }
 
