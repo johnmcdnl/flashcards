@@ -8,9 +8,9 @@ import (
 // ID is a unique identifier
 type ID string
 
-func newID() ID{
+func newID() ID {
 	logrus.Debugln(`func newID() ID{`)
-	return ID(uuid.Must(uuid.NewV4()).String())
+	return ID(uuid.NewV4().String())
 }
 
 // String represents a ID
