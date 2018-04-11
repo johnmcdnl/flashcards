@@ -14,10 +14,12 @@ import (
 	"encoding/json"
 )
 
+// Deck is a group of Phrases
 type Deck struct {
 	Phrases []*Phrase `json:"phrases"`
 }
 
+// NewDeck crates a new Deck
 func NewDeck(p *Phrase) *Deck {
 	logrus.Debugln(`func NewDeck(p *Phrase) *Deck {`, p)
 	var d Deck
@@ -29,6 +31,7 @@ func NewDeck(p *Phrase) *Deck {
 	return d.With(p)
 }
 
+// With adds a Phrase to the deck
 func (d *Deck) With(p *Phrase) *Deck {
 	logrus.Debugln(`func (d *Deck) With(p *Phrase) *Deck {`, p)
 	if p == nil {
@@ -39,6 +42,7 @@ func (d *Deck) With(p *Phrase) *Deck {
 	return d
 }
 
+// Next gets the next card from the deck
 func (d *Deck) Next() *Phrase {
 	logrus.Debugln(`func (d *Deck) Next() *Phrase {`, )
 
@@ -46,12 +50,14 @@ func (d *Deck) Next() *Phrase {
 	return d.Phrases[rand.Intn(len(d.Phrases))]
 }
 
+// Answer attempts to answer a question
 func (d *Deck) Answer(p *Phrase, l Language, ans string) error {
 	logrus.Debugln(`func (d *Deck) Answer(p *Phrase, answer string) error {`, p, l, ans)
 
 	return p.Answer(l, ans)
 }
 
+// SeedFromCSV populates a deck from the data folder
 func (d *Deck) SeedFromCSV() {
 	walkFn := func(path string, _ os.FileInfo, err error) error {
 		if !strings.HasSuffix(path, ".csv") {
@@ -60,7 +66,7 @@ func (d *Deck) SeedFromCSV() {
 
 		return d.seedFromCSV(path)
 	}
-	filepath.Walk("./", walkFn)
+	filepath.Walk("./data", walkFn)
 }
 
 func (d *Deck) seedFromCSV(path string) error {
@@ -76,9 +82,6 @@ func (d *Deck) seedFromCSV(path string) error {
 	headers := records[0]
 	data := records[1:]
 
-	fmt.Println(len(d.Phrases))
-	fmt.Println(len(d.Phrases))
-	fmt.Println(len(d.Phrases))
 	for _, row := range data {
 		phrase := NewPhrase(nil)
 		for i, col := range row {
@@ -88,8 +91,8 @@ func (d *Deck) seedFromCSV(path string) error {
 			if len(strings.Trim(lang, " ")) != 2 {
 				//It's a phonetic
 				split := strings.Split(lang, "_")
-				phraseLang := GetLang(strings.Replace(split[0],"_", "", -1))
-				phoneticLang := GetLang(strings.Replace(split[1],"_", "", -1))
+				phraseLang := GetLang(strings.Replace(split[0], "_", "", -1))
+				phoneticLang := GetLang(strings.Replace(split[1], "_", "", -1))
 
 				phrase.Get(phraseLang).With(NewPhonetic(phoneticLang, val))
 				continue
@@ -99,13 +102,6 @@ func (d *Deck) seedFromCSV(path string) error {
 		}
 		d.With(phrase)
 	}
-
-	fmt.Println(len(d.Phrases))
-	fmt.Println(len(d.Phrases))
-	fmt.Println(len(d.Phrases))
-
-	fmt.Println(headers)
-	fmt.Println(data)
 
 	return nil
 }
@@ -121,6 +117,7 @@ func readCSV(path string) ([][]string, error) {
 	return reader.ReadAll()
 }
 
+// String represents a Deck
 func (d *Deck) String() string {
 	return jsonString(d)
 }
