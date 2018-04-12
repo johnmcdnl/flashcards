@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  name = "github.com/boltdb/bolt"
+  packages = ["."]
+  revision = "2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8"
+  version = "v1.3.1"
+
+[[projects]]
   name = "github.com/satori/go.uuid"
   packages = ["."]
   revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
@@ -31,6 +37,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "7f100711a647ad5d32df5bfdd483ab1cdc06efefab0b482cdccdaf5d6f4d7801"
+  inputs-digest = "e669585d81ba6d6ec6c07e457e6e309c32dfcfbeaa73fc33cdba6244f10afd43"
   solver-name = "gps-cdcl"
   solver-version = 1
