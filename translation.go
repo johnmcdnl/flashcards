@@ -13,6 +13,15 @@ type Translation struct {
 // NewTranslation generates a new Translation
 func NewTranslation(l Language, v string) *Translation {
 	logrus.Debugln(`func NewTranslation(l Language, v string) *Translation {`, l, v)
+
+	if l.Code == "" {
+		return nil
+	}
+
+	if v == "" {
+		return nil
+	}
+
 	return &Translation{
 		//ID: newID(),
 		Language: l,
