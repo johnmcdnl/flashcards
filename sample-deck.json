@@ -1,1 +1,2304 @@
-{"phrases":[{"id":"464b96ff-b261-4b75-bf1e-19cace81aa5b","translations":[{"langCode":"en","value":"time"},{"langCode":"fr","value":"temps"},{"langCode":"ru","value":"время","phonetics":[{"langCode":"en","value":"vremya"}]}]},{"id":"129347df-23ac-4fe5-bf2c-1db7e052666f","translations":[{"langCode":"en","value":"year"},{"langCode":"fr","value":"an"},{"langCode":"ru","value":"год","phonetics":[{"langCode":"en","value":"god"}]}]},{"id":"3225c983-0f9c-43d6-b5c1-2499eb1276e1","translations":[{"langCode":"en","value":"people"},{"langCode":"fr","value":"gens"},{"langCode":"ru","value":"люди","phonetics":[{"langCode":"en","value":"lyudi"}]}]},{"id":"eb1901ff-1732-467a-9861-c91ce3967efd","translations":[{"langCode":"en","value":"way"},{"langCode":"fr","value":"façon"},{"langCode":"ru","value":"путь","phonetics":[{"langCode":"en","value":"put'"}]}]},{"id":"ab3adf67-8faa-48c2-9f05-beb19447d67c","translations":[{"langCode":"en","value":"day"},{"langCode":"fr","value":"journée"},{"langCode":"ru","value":"день","phonetics":[{"langCode":"en","value":"den'"}]}]},{"id":"13fddcc1-3d89-4b38-9552-d35ee43d74f4","translations":[{"langCode":"en","value":"man"},{"langCode":"fr","value":"homme"},{"langCode":"ru","value":"человек","phonetics":[{"langCode":"en","value":"chelovek"}]}]},{"id":"f264c36e-7b7a-4104-b16e-d95a2121566d","translations":[{"langCode":"en","value":"thing"},{"langCode":"fr","value":"chose"},{"langCode":"ru","value":"вещь","phonetics":[{"langCode":"en","value":"veshch'"}]}]},{"id":"7aba573d-a4ba-4e40-a007-2089aecdc5ff","translations":[{"langCode":"en","value":"woman"},{"langCode":"fr","value":"femme"},{"langCode":"ru","value":"женщина","phonetics":[{"langCode":"en","value":"zhenshchina"}]}]},{"id":"92b42fdf-fb1b-4b5c-b2a1-a461eec561bd","translations":[{"langCode":"en","value":"life"},{"langCode":"fr","value":"la vie"},{"langCode":"ru","value":"жизнь","phonetics":[{"langCode":"en","value":"zhizn'"}]}]},{"id":"b148dbd8-3bdf-4d28-b1eb-46f47d892008","translations":[{"langCode":"en","value":"child"},{"langCode":"fr","value":"enfant"},{"langCode":"ru","value":"ребенок","phonetics":[{"langCode":"en","value":"rebenok"}]}]},{"id":"54db7a88-1549-41e4-acaf-d0d81e577831","translations":[{"langCode":"en","value":"world"},{"langCode":"fr","value":"monde"},{"langCode":"ru","value":"Мир","phonetics":[{"langCode":"en","value":"Mir"}]}]},{"id":"58ef1c26-e02c-430e-a8bf-e44dd24466b8","translations":[{"langCode":"en","value":"school"},{"langCode":"fr","value":"école"},{"langCode":"ru","value":"школа","phonetics":[{"langCode":"en","value":"shkola"}]}]},{"id":"6f0e1104-7e1d-4cbe-8dd1-b4bea886f15b","translations":[{"langCode":"en","value":"state"},{"langCode":"fr","value":"Etat"},{"langCode":"ru","value":"государство","phonetics":[{"langCode":"en","value":"gosudarstvo"}]}]},{"id":"4691826b-d341-4fbe-9be0-dc0e40759ff6","translations":[{"langCode":"en","value":"state"},{"langCode":"fr","value":"Etat"},{"langCode":"ru","value":"государство","phonetics":[{"langCode":"en","value":"gosudarstvo"}]}]},{"id":"34f47487-ed63-46d0-98d8-1ac185544059","translations":[{"langCode":"en","value":"state"},{"langCode":"fr","value":"Etat"},{"langCode":"ru","value":"государство","phonetics":[{"langCode":"en","value":"gosudarstvo"}]}]},{"id":"b0a86f40-1590-4814-a33d-31e7f3eb5df1","translations":[{"langCode":"en","value":"family"},{"langCode":"fr","value":"famille"},{"langCode":"ru","value":"семья","phonetics":[{"langCode":"en","value":"sem'ya"}]}]},{"id":"fbed6275-186a-4600-bea4-59fd5328e0c7","translations":[{"langCode":"en","value":"student"},{"langCode":"fr","value":"étudiant"},{"langCode":"ru","value":"студент","phonetics":[{"langCode":"en","value":"student"}]}]},{"id":"fe0fc197-0078-412d-9d29-6061f8008f95","translations":[{"langCode":"en","value":"group"},{"langCode":"fr","value":"groupe"},{"langCode":"ru","value":"группа","phonetics":[{"langCode":"en","value":"gruppa"}]}]},{"id":"680df027-0ed8-40c9-afec-121f34a6e679","translations":[{"langCode":"en","value":"country"},{"langCode":"fr","value":"pays"},{"langCode":"ru","value":"страна","phonetics":[{"langCode":"en","value":"strana"}]}]},{"id":"ae6b1323-7350-492a-9413-ff5bb1dc09f7","translations":[{"langCode":"en","value":"problem"},{"langCode":"fr","value":"problème"},{"langCode":"ru","value":"проблема","phonetics":[{"langCode":"en","value":"problema"}]}]},{"id":"b54e9f07-872a-42a5-a5a5-87eb8e0eee8b","translations":[{"langCode":"en","value":"hand"},{"langCode":"fr","value":"main"},{"langCode":"ru","value":"рука","phonetics":[{"langCode":"en","value":"ruka"}]}]},{"id":"76503b00-305a-410a-bb62-3381cdcd6335","translations":[{"langCode":"en","value":"part"},{"langCode":"fr","value":"partie"},{"langCode":"ru","value":"часть","phonetics":[{"langCode":"en","value":"chast'"}]}]},{"id":"aaf5833a-7ae9-48b4-bf72-889320371d5b","translations":[{"langCode":"en","value":"place"},{"langCode":"fr","value":"endroit"},{"langCode":"ru","value":"место","phonetics":[{"langCode":"en","value":"mesto"}]}]},{"id":"5fb2c9dd-82fb-4d24-bf0d-e5e5ee4d7c85","translations":[{"langCode":"en","value":"case"},{"langCode":"fr","value":"Cas"},{"langCode":"ru","value":"дело","phonetics":[{"langCode":"en","value":"delo"}]}]},{"id":"c91ba41a-0762-423c-a916-b2417ffd95b3","translations":[{"langCode":"en","value":"week"},{"langCode":"fr","value":"la semaine"},{"langCode":"ru","value":"неделю","phonetics":[{"langCode":"en","value":"nedelyu"}]}]},{"id":"bcc0858f-447e-4bb9-9525-15cb3575cb47","translations":[{"langCode":"en","value":"company"},{"langCode":"fr","value":"compagnie"},{"langCode":"ru","value":"Компания","phonetics":[{"langCode":"en","value":"Kompaniya"}]}]},{"id":"1c2d16a7-dbef-4ecf-b4ba-69439b78bad5","translations":[{"langCode":"en","value":"system"},{"langCode":"fr","value":"système"},{"langCode":"ru","value":"система","phonetics":[{"langCode":"en","value":"sistema"}]}]},{"id":"d8b05718-62b2-40a4-a4d4-75eaed73d111","translations":[{"langCode":"en","value":"program"},{"langCode":"fr","value":"programme"},{"langCode":"ru","value":"программа","phonetics":[{"langCode":"en","value":"programma"}]}]},{"id":"6167f9dc-cbbf-49fe-ac1a-b39a9f8cbd0c","translations":[{"langCode":"en","value":"question"},{"langCode":"fr","value":"question"},{"langCode":"ru","value":"вопрос","phonetics":[{"langCode":"en","value":"vopros"}]}]},{"id":"3a0da4ff-4805-4b0f-bdd6-378e226a3d0b","translations":[{"langCode":"en","value":"work"},{"langCode":"fr","value":"travail"},{"langCode":"ru","value":"Работа","phonetics":[{"langCode":"en","value":"Rabota"}]}]},{"id":"36cae537-29f8-4e18-95bc-e832547bdb74","translations":[{"langCode":"en","value":"government"},{"langCode":"fr","value":"gouvernement"},{"langCode":"ru","value":"правительство","phonetics":[{"langCode":"en","value":"pravitel'stvo"}]}]},{"id":"db03f32d-290a-4dad-a201-1696924fc331","translations":[{"langCode":"en","value":"number"},{"langCode":"fr","value":"nombre"},{"langCode":"ru","value":"номер","phonetics":[{"langCode":"en","value":"nomer"}]}]},{"id":"7f804535-af43-4e5a-a196-9c4c44e02ff1","translations":[{"langCode":"en","value":"night"},{"langCode":"fr","value":"nuit"},{"langCode":"ru","value":"ночь","phonetics":[{"langCode":"en","value":"noch'"}]}]},{"id":"7ae0be8d-fc7e-45e1-b89d-7e95b99a98d1","translations":[{"langCode":"en","value":"point"},{"langCode":"fr","value":"point"},{"langCode":"ru","value":"точка","phonetics":[{"langCode":"en","value":"tochka"}]}]},{"id":"218c1289-a14e-442a-a9eb-a7c85325532a","translations":[{"langCode":"en","value":"home"},{"langCode":"fr","value":"maison"},{"langCode":"ru","value":"Главная","phonetics":[{"langCode":"en","value":"Glavnaya"}]}]},{"id":"ea6e4780-c061-4eed-860f-df35f7b00e38","translations":[{"langCode":"en","value":"water"},{"langCode":"fr","value":"eau"},{"langCode":"ru","value":"воды","phonetics":[{"langCode":"en","value":"vody"}]}]},{"id":"d23c17c0-a59b-4074-a95f-de8f3b879b1d","translations":[{"langCode":"en","value":"room"},{"langCode":"fr","value":"chambre"},{"langCode":"ru","value":"комната","phonetics":[{"langCode":"en","value":"komnata"}]}]},{"id":"bd354fe3-d600-4de2-8625-44f9b93ce761","translations":[{"langCode":"en","value":"mother"},{"langCode":"fr","value":"mère"},{"langCode":"ru","value":"мама","phonetics":[{"langCode":"en","value":"mama"}]}]},{"id":"84daac23-839a-43ee-a4a1-2d715d97b621","translations":[{"langCode":"en","value":"area"},{"langCode":"fr","value":"région"},{"langCode":"ru","value":"площадь","phonetics":[{"langCode":"en","value":"ploshchad'"}]}]},{"id":"695e751b-5351-4a13-a5e7-719869dbcc9b","translations":[{"langCode":"en","value":"money"},{"langCode":"fr","value":"argent"},{"langCode":"ru","value":"Деньги","phonetics":[{"langCode":"en","value":"Den'gi"}]}]},{"id":"0335008d-faa1-4546-a6ae-f81a72e11801","translations":[{"langCode":"en","value":"story"},{"langCode":"fr","value":"récit"},{"langCode":"ru","value":"история","phonetics":[{"langCode":"en","value":"istoriya"}]}]},{"id":"39414fc6-3ea1-4a4d-8ddb-34563b417c74","translations":[{"langCode":"en","value":"fact"},{"langCode":"fr","value":"fait"},{"langCode":"ru","value":"факт","phonetics":[{"langCode":"en","value":"fakt"}]}]},{"id":"c66b7624-c50a-4f07-a3fb-2bbdf23f8042","translations":[{"langCode":"en","value":"month"},{"langCode":"fr","value":"mois"},{"langCode":"ru","value":"месяц","phonetics":[{"langCode":"en","value":"mesyats"}]}]},{"id":"29371cf3-d8b6-4833-9599-1d0ea3d45309","translations":[{"langCode":"en","value":"lot"},{"langCode":"fr","value":"lot"},{"langCode":"ru","value":"много","phonetics":[{"langCode":"en","value":"mnogo"}]}]},{"id":"3104cb49-8e71-4a63-b0d5-423d9b5f8bbd","translations":[{"langCode":"en","value":"right"},{"langCode":"fr","value":"droite"},{"langCode":"ru","value":"правильно","phonetics":[{"langCode":"en","value":"pravil'no"}]}]},{"id":"b42a13ff-8df7-4e7e-9d30-31925a2e3209","translations":[{"langCode":"en","value":"study"},{"langCode":"fr","value":"étude"},{"langCode":"ru","value":"изучение","phonetics":[{"langCode":"en","value":"izucheniye"}]}]},{"id":"af2c811f-2d4b-4a0f-a990-cbc6a66808a4","translations":[{"langCode":"en","value":"book"},{"langCode":"fr","value":"livre"},{"langCode":"ru","value":"книга","phonetics":[{"langCode":"en","value":"kniga"}]}]},{"id":"a69a3e99-6194-4c12-b191-6f1ea2819622","translations":[{"langCode":"en","value":"eye"},{"langCode":"fr","value":"œil"},{"langCode":"ru","value":"глаз","phonetics":[{"langCode":"en","value":"glaz"}]}]},{"id":"a24e569a-e5fd-433e-b65d-03fb591f57c7","translations":[{"langCode":"en","value":"job"},{"langCode":"fr","value":"emploi"},{"langCode":"ru","value":"работа","phonetics":[{"langCode":"en","value":"rabota"}]}]},{"id":"0646bc73-bfdc-49a0-90cb-d9eb1f33a92e","translations":[{"langCode":"en","value":"word"},{"langCode":"fr","value":"mot"},{"langCode":"ru","value":"слово","phonetics":[{"langCode":"en","value":"slovo"}]}]},{"id":"d9127092-2448-4212-8a7b-b633a0088296","translations":[{"langCode":"en","value":"business"},{"langCode":"fr","value":"Entreprise"},{"langCode":"ru","value":"бизнес","phonetics":[{"langCode":"en","value":"biznes"}]}]},{"id":"86745d84-f816-4f67-af00-82cc1ea5b5da","translations":[{"langCode":"en","value":"issue"},{"langCode":"fr","value":"problème"},{"langCode":"ru","value":"вопрос","phonetics":[{"langCode":"en","value":"vopros"}]}]},{"id":"bb6486e3-beeb-41e5-8ab7-572bb2da816d","translations":[{"langCode":"en","value":"side"},{"langCode":"fr","value":"côté"},{"langCode":"ru","value":"боковая сторона","phonetics":[{"langCode":"en","value":"bokovaya storona"}]}]},{"id":"d90de161-1c86-4263-9a96-c0861245fc58","translations":[{"langCode":"en","value":"kind"},{"langCode":"fr","value":"gentil"},{"langCode":"ru","value":"своего рода","phonetics":[{"langCode":"en","value":"svoyego roda"}]}]},{"id":"d7733ccd-852f-419b-ba76-9da3a083d721","translations":[{"langCode":"en","value":"head"},{"langCode":"fr","value":"tête"},{"langCode":"ru","value":"глава","phonetics":[{"langCode":"en","value":"glava"}]}]},{"id":"811f6a73-01b0-40e4-81dc-24991e57a842","translations":[{"langCode":"en","value":"house"},{"langCode":"fr","value":"maison"},{"langCode":"ru","value":"дом","phonetics":[{"langCode":"en","value":"dom"}]}]},{"id":"d93543f4-6b94-4643-b4b9-2be8936722a0","translations":[{"langCode":"en","value":"service"},{"langCode":"fr","value":"un service"},{"langCode":"ru","value":"оказание услуг","phonetics":[{"langCode":"en","value":"okazaniye uslug"}]}]},{"id":"2f933734-b66d-4109-afa0-dbddc4e65b55","translations":[{"langCode":"en","value":"friend"},{"langCode":"fr","value":"ami"},{"langCode":"ru","value":"друг","phonetics":[{"langCode":"en","value":"drug"}]}]},{"id":"b59c9473-192b-436c-a637-0b5b02a9f1f4","translations":[{"langCode":"en","value":"father"},{"langCode":"fr","value":"père"},{"langCode":"ru","value":"отец","phonetics":[{"langCode":"en","value":"otets"}]}]},{"id":"edeccdf5-e54c-4818-ab89-0d204bd77892","translations":[{"langCode":"en","value":"power"},{"langCode":"fr","value":"Puissance"},{"langCode":"ru","value":"мощность","phonetics":[{"langCode":"en","value":"moshchnost'"}]}]},{"id":"209cf39d-4e84-4b1a-bf7b-309d98168939","translations":[{"langCode":"en","value":"hour"},{"langCode":"fr","value":"heure"},{"langCode":"ru","value":"час","phonetics":[{"langCode":"en","value":"chas"}]}]},{"id":"336fd3e3-86b5-431b-b020-870acb65a420","translations":[{"langCode":"en","value":"game"},{"langCode":"fr","value":"Jeu"},{"langCode":"ru","value":"игра","phonetics":[{"langCode":"en","value":"igra"}]}]},{"id":"08b023d2-20ce-4106-9470-b215d604702f","translations":[{"langCode":"en","value":"line"},{"langCode":"fr","value":"ligne"},{"langCode":"ru","value":"линия","phonetics":[{"langCode":"en","value":"liniya"}]}]},{"id":"3a16b162-c812-46f3-ba63-ba1af23c969d","translations":[{"langCode":"en","value":"end"},{"langCode":"fr","value":"fin"},{"langCode":"ru","value":"конец","phonetics":[{"langCode":"en","value":"konets"}]}]},{"id":"abab5711-abb7-4e51-a4d5-7a8f260df69a","translations":[{"langCode":"en","value":"member"},{"langCode":"fr","value":"membre"},{"langCode":"ru","value":"член","phonetics":[{"langCode":"en","value":"chlen"}]}]},{"id":"9fedb52c-22d4-44dc-9287-db22c4d931f2","translations":[{"langCode":"en","value":"law"},{"langCode":"fr","value":"loi"},{"langCode":"ru","value":"закон","phonetics":[{"langCode":"en","value":"zakon"}]}]},{"id":"915a3423-56f5-4e0a-97a6-b0a77719cbe2","translations":[{"langCode":"en","value":"car"},{"langCode":"fr","value":"voiture"},{"langCode":"ru","value":"автомобиль","phonetics":[{"langCode":"en","value":"avtomobil'"}]}]},{"id":"91d732b1-9ca2-425e-898c-49240b28b5c3","translations":[{"langCode":"en","value":"city"},{"langCode":"fr","value":"ville"},{"langCode":"ru","value":"город","phonetics":[{"langCode":"en","value":"gorod"}]}]},{"id":"8c08bbdb-099c-4dea-b50b-43294eff45c0","translations":[{"langCode":"en","value":"community"},{"langCode":"fr","value":"communauté"},{"langCode":"ru","value":"сообщество","phonetics":[{"langCode":"en","value":"soobshchestvo"}]}]},{"id":"80c72ece-61b4-4807-a569-be3a394c5dbb","translations":[{"langCode":"en","value":"name"},{"langCode":"fr","value":"prénom"},{"langCode":"ru","value":"имя","phonetics":[{"langCode":"en","value":"imya"}]}]},{"id":"fa806036-48a0-4e9d-b7a0-cd6019ea5e70","translations":[{"langCode":"en","value":"president"},{"langCode":"fr","value":"Président"},{"langCode":"ru","value":"президент","phonetics":[{"langCode":"en","value":"prezident"}]}]},{"id":"203b929b-36e1-416f-bddc-6ef48d61622b","translations":[{"langCode":"en","value":"team"},{"langCode":"fr","value":"équipe"},{"langCode":"ru","value":"команда","phonetics":[{"langCode":"en","value":"komanda"}]}]},{"id":"75bc99e7-6d65-42e9-96db-d6acc58745e6","translations":[{"langCode":"en","value":"minute"},{"langCode":"fr","value":"minute"},{"langCode":"ru","value":"минут","phonetics":[{"langCode":"en","value":"minut"}]}]},{"id":"17d322e3-85f5-405e-8874-8fdf68fa7416","translations":[{"langCode":"en","value":"idea"},{"langCode":"fr","value":"idée"},{"langCode":"ru","value":"идея","phonetics":[{"langCode":"en","value":"ideya"}]}]},{"id":"728c8477-7ae3-41c9-bd93-ee659bcd3e61","translations":[{"langCode":"en","value":"kid"},{"langCode":"fr","value":"enfant"},{"langCode":"ru","value":"дитя","phonetics":[{"langCode":"en","value":"ditya"}]}]},{"id":"c66cc9b3-de31-4085-9ed5-5c739eade84e","translations":[{"langCode":"en","value":"body"},{"langCode":"fr","value":"corps"},{"langCode":"ru","value":"тело","phonetics":[{"langCode":"en","value":"telo"}]}]},{"id":"280e3fe6-eab3-4a92-b121-1c28938f3ab5","translations":[{"langCode":"en","value":"information"},{"langCode":"fr","value":"information"},{"langCode":"ru","value":"Информация","phonetics":[{"langCode":"en","value":"Informatsiya"}]}]},{"id":"0a5ae9f6-67fb-4f13-82ff-291188ba17ec","translations":[{"langCode":"en","value":"back"},{"langCode":"fr","value":"arrière"},{"langCode":"ru","value":"назад","phonetics":[{"langCode":"en","value":"nazad"}]}]},{"id":"368f5063-8615-4393-ae7e-668a97eccafe","translations":[{"langCode":"en","value":"parent"},{"langCode":"fr","value":"parent"},{"langCode":"ru","value":"родитель","phonetics":[{"langCode":"en","value":"roditel'"}]}]},{"id":"d91535b4-7d54-492b-a209-0327f261170e","translations":[{"langCode":"en","value":"face"},{"langCode":"fr","value":"visage"},{"langCode":"ru","value":"лицо","phonetics":[{"langCode":"en","value":"litso"}]}]},{"id":"a13a74c1-6fa3-4745-bb89-514ce81b5e5b","translations":[{"langCode":"en","value":"others"},{"langCode":"fr","value":"autres"},{"langCode":"ru","value":"другие","phonetics":[{"langCode":"en","value":"drugiye"}]}]},{"id":"21205cd2-5cba-47c3-8353-0b5bb01c002b","translations":[{"langCode":"en","value":"level"},{"langCode":"fr","value":"niveau"},{"langCode":"ru","value":"уровень","phonetics":[{"langCode":"en","value":"uroven'"}]}]},{"id":"4d8dfaf1-cd2b-4d42-bccf-5d0f84162c01","translations":[{"langCode":"en","value":"office"},{"langCode":"fr","value":"Bureau"},{"langCode":"ru","value":"офис","phonetics":[{"langCode":"en","value":"ofis"}]}]},{"id":"bdbd4e5f-750d-4749-8a6f-7bfac79807a3","translations":[{"langCode":"en","value":"door"},{"langCode":"fr","value":"porte"},{"langCode":"ru","value":"дверь","phonetics":[{"langCode":"en","value":"dver'"}]}]},{"id":"87c9ccc1-a5c2-4242-86ab-26fbe2f132c4","translations":[{"langCode":"en","value":"health"},{"langCode":"fr","value":"santé"},{"langCode":"ru","value":"здоровье","phonetics":[{"langCode":"en","value":"zdorov'ye"}]}]},{"id":"f7030ddc-810d-4ea9-9a10-e3bda9017488","translations":[{"langCode":"en","value":"person"},{"langCode":"fr","value":"la personne"},{"langCode":"ru","value":"человек","phonetics":[{"langCode":"en","value":"chelovek"}]}]},{"id":"703990d0-17e2-4fe3-873d-913568aed7da","translations":[{"langCode":"en","value":"art"},{"langCode":"fr","value":"art"},{"langCode":"ru","value":"Изобразительное искусство","phonetics":[{"langCode":"en","value":"Izobrazitel'noye iskusstvo"}]}]},{"id":"e78ec880-b58e-4c80-a208-7d1c2d02b597","translations":[{"langCode":"en","value":"war"},{"langCode":"fr","value":"guerre"},{"langCode":"ru","value":"война","phonetics":[{"langCode":"en","value":"voyna"}]}]},{"id":"ba52067d-a71a-4e2d-93d4-29f5a78205f8","translations":[{"langCode":"en","value":"history"},{"langCode":"fr","value":"histoire"},{"langCode":"ru","value":"история","phonetics":[{"langCode":"en","value":"istoriya"}]}]},{"id":"f495c9f9-5882-4122-9c7f-e5f5e8457e68","translations":[{"langCode":"en","value":"party"},{"langCode":"fr","value":"fête"},{"langCode":"ru","value":"вечеринка","phonetics":[{"langCode":"en","value":"vecherinka"}]}]},{"id":"0888466d-9778-4d92-a95b-d8003882f6c7","translations":[{"langCode":"en","value":"result"},{"langCode":"fr","value":"résultat"},{"langCode":"ru","value":"результат","phonetics":[{"langCode":"en","value":"rezul'tat"}]}]},{"id":"71e83911-61d6-4b91-88c4-0d3157935aca","translations":[{"langCode":"en","value":"change"},{"langCode":"fr","value":"changement"},{"langCode":"ru","value":"изменение","phonetics":[{"langCode":"en","value":"izmeneniye"}]}]},{"id":"1936e606-4c37-44c8-b520-b20290b821a3","translations":[{"langCode":"en","value":"morning"},{"langCode":"fr","value":"Matin"},{"langCode":"ru","value":"утро","phonetics":[{"langCode":"en","value":"utro"}]}]},{"id":"85fb2654-b334-4ccb-b33f-d9af2cfb1e42","translations":[{"langCode":"en","value":"reason"},{"langCode":"fr","value":"raison"},{"langCode":"ru","value":"причина","phonetics":[{"langCode":"en","value":"prichina"}]}]},{"id":"3d626b86-ba48-424f-8e40-de271039053c","translations":[{"langCode":"en","value":"research"},{"langCode":"fr","value":"recherche"},{"langCode":"ru","value":"исследование","phonetics":[{"langCode":"en","value":"issledovaniye"}]}]},{"id":"8773b55c-2a60-4af2-b08d-0d6733032b4d","translations":[{"langCode":"en","value":"girl"},{"langCode":"fr","value":"fille"},{"langCode":"ru","value":"девушка","phonetics":[{"langCode":"en","value":"devushka"}]}]},{"id":"3922816e-fece-45e8-b819-be82501e5c91","translations":[{"langCode":"en","value":"guy"},{"langCode":"fr","value":"gars"},{"langCode":"ru","value":"парень","phonetics":[{"langCode":"en","value":"paren'"}]}]},{"id":"67d18e70-cc83-421f-b5ea-7618e1acdcc0","translations":[{"langCode":"en","value":"moment"},{"langCode":"fr","value":"moment"},{"langCode":"ru","value":"момент","phonetics":[{"langCode":"en","value":"moment"}]}]},{"id":"18e20157-5224-45e7-a689-c2571275b32e","translations":[{"langCode":"en","value":"air"},{"langCode":"fr","value":"air"},{"langCode":"ru","value":"воздух","phonetics":[{"langCode":"en","value":"vozdukh"}]}]},{"id":"d93acf97-551e-4120-b55b-13fb6cf28e96","translations":[{"langCode":"en","value":"teacher"},{"langCode":"fr","value":"prof"},{"langCode":"ru","value":"учитель","phonetics":[{"langCode":"en","value":"uchitel'"}]}]},{"id":"1c46ea62-2ebd-4f4e-aa19-4eb37ae4c6ce","translations":[{"langCode":"en","value":"force"},{"langCode":"fr","value":"Obliger"},{"langCode":"ru","value":"сила","phonetics":[{"langCode":"en","value":"sila"}]}]},{"id":"a6b3ecae-2c56-46eb-924a-06cacd2df1bf","translations":[{"langCode":"en","value":"education"},{"langCode":"fr","value":"éducation"},{"langCode":"ru","value":"образование","phonetics":[{"langCode":"en","value":"obrazovaniye"}]}]}]}
+{
+  "phrases": [
+    {
+      "id": "84fc7211-27c6-4b2d-8652-97f010c4f07d",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "time"
+        },
+        {
+          "langCode": "fr",
+          "value": "temps"
+        },
+        {
+          "langCode": "ru",
+          "value": "время",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vremya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17c9274d-37ea-43e1-b1a2-c371d68fab89",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "year"
+        },
+        {
+          "langCode": "fr",
+          "value": "an"
+        },
+        {
+          "langCode": "ru",
+          "value": "год",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "god"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9621ddde-7a10-480b-b724-a986baf5fbd9",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "people"
+        },
+        {
+          "langCode": "fr",
+          "value": "gens"
+        },
+        {
+          "langCode": "ru",
+          "value": "люди",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "lyudi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ba2cc5d6-1c29-4f44-a3cd-09faea012d47",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "way"
+        },
+        {
+          "langCode": "fr",
+          "value": "façon"
+        },
+        {
+          "langCode": "ru",
+          "value": "путь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "put'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a7a90342-90ad-49f6-9ee6-7dfe3c484b11",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "day"
+        },
+        {
+          "langCode": "fr",
+          "value": "journée"
+        },
+        {
+          "langCode": "ru",
+          "value": "день",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "den'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "50d7f471-f851-460c-a9b7-6a3677f01314",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "man"
+        },
+        {
+          "langCode": "fr",
+          "value": "homme"
+        },
+        {
+          "langCode": "ru",
+          "value": "человек",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "chelovek"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "390b77e9-3776-4c87-a476-60f9c84978d8",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "thing"
+        },
+        {
+          "langCode": "fr",
+          "value": "chose"
+        },
+        {
+          "langCode": "ru",
+          "value": "вещь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "veshch'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15992d83-a475-4b47-9cc3-57bd18a27399",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "woman"
+        },
+        {
+          "langCode": "fr",
+          "value": "femme"
+        },
+        {
+          "langCode": "ru",
+          "value": "женщина",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "zhenshchina"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3ce33ddb-0b09-496e-8164-af7ff412fada",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "life"
+        },
+        {
+          "langCode": "fr",
+          "value": "la vie"
+        },
+        {
+          "langCode": "ru",
+          "value": "жизнь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "zhizn'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "88b15108-b252-459f-bbe8-7297a87631be",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "child"
+        },
+        {
+          "langCode": "fr",
+          "value": "enfant"
+        },
+        {
+          "langCode": "ru",
+          "value": "ребенок",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "rebenok"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "379caa01-b81d-40fe-87a4-166ac5f1e464",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "world"
+        },
+        {
+          "langCode": "fr",
+          "value": "monde"
+        },
+        {
+          "langCode": "ru",
+          "value": "Мир",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Mir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "778ff881-0ad7-4fda-880e-71d0892c065f",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "school"
+        },
+        {
+          "langCode": "fr",
+          "value": "école"
+        },
+        {
+          "langCode": "ru",
+          "value": "школа",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "shkola"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7fbd65c7-86ce-484e-9c73-8d3816b9ac8d",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "state"
+        },
+        {
+          "langCode": "fr",
+          "value": "Etat"
+        },
+        {
+          "langCode": "ru",
+          "value": "государство",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "gosudarstvo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c35764dc-f3c8-48f3-a27b-e6f5d3bf33a5",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "family"
+        },
+        {
+          "langCode": "fr",
+          "value": "famille"
+        },
+        {
+          "langCode": "ru",
+          "value": "семья",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "sem'ya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4b01656c-3fee-421b-94b1-a4082a52661f",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "student"
+        },
+        {
+          "langCode": "fr",
+          "value": "étudiant"
+        },
+        {
+          "langCode": "ru",
+          "value": "студент",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "student"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "50d4f8ff-6838-4b98-ae4e-be23fb631612",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "group"
+        },
+        {
+          "langCode": "fr",
+          "value": "groupe"
+        },
+        {
+          "langCode": "ru",
+          "value": "группа",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "gruppa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bfeca68e-ad10-496c-8466-4cd7ede971f0",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "country"
+        },
+        {
+          "langCode": "fr",
+          "value": "pays"
+        },
+        {
+          "langCode": "ru",
+          "value": "страна",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "strana"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "981fb017-e59e-4fce-8db1-1b4e7074875b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "problem"
+        },
+        {
+          "langCode": "fr",
+          "value": "problème"
+        },
+        {
+          "langCode": "ru",
+          "value": "проблема",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "problema"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6a1113f4-5ba9-4dd4-a501-076025b86a82",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "hand"
+        },
+        {
+          "langCode": "fr",
+          "value": "main"
+        },
+        {
+          "langCode": "ru",
+          "value": "рука",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "ruka"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "43231165-5625-4699-accb-eda63ef5a57c",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "part"
+        },
+        {
+          "langCode": "fr",
+          "value": "partie"
+        },
+        {
+          "langCode": "ru",
+          "value": "часть",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "chast'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acbed626-db69-4dfd-ab02-bcc309e813e4",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "place"
+        },
+        {
+          "langCode": "fr",
+          "value": "endroit"
+        },
+        {
+          "langCode": "ru",
+          "value": "место",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "mesto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "db982cda-23e3-4563-81f3-92dcdb1e5fd9",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "case"
+        },
+        {
+          "langCode": "fr",
+          "value": "Cas"
+        },
+        {
+          "langCode": "ru",
+          "value": "дело",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "delo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a673427e-723e-4e5e-91fc-4caaa0bc03c0",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "week"
+        },
+        {
+          "langCode": "fr",
+          "value": "la semaine"
+        },
+        {
+          "langCode": "ru",
+          "value": "неделю",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "nedelyu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3eb996ad-8105-475d-951e-24b31e3e54f5",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "company"
+        },
+        {
+          "langCode": "fr",
+          "value": "compagnie"
+        },
+        {
+          "langCode": "ru",
+          "value": "Компания",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Kompaniya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9f52008a-39c9-4ce0-ad24-66dd935b1da1",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "system"
+        },
+        {
+          "langCode": "fr",
+          "value": "système"
+        },
+        {
+          "langCode": "ru",
+          "value": "система",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "sistema"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2f2989ae-608b-4aea-8fde-e1426894ffd9",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "program"
+        },
+        {
+          "langCode": "fr",
+          "value": "programme"
+        },
+        {
+          "langCode": "ru",
+          "value": "программа",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "programma"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "581321f2-e605-477a-a942-d08a89d3cd77",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "question"
+        },
+        {
+          "langCode": "fr",
+          "value": "question"
+        },
+        {
+          "langCode": "ru",
+          "value": "вопрос",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vopros"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b729235c-7bbe-457a-ae15-68b905d221b6",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "work"
+        },
+        {
+          "langCode": "fr",
+          "value": "travail"
+        },
+        {
+          "langCode": "ru",
+          "value": "Работа",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Rabota"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38405965-1fcc-4e63-a15a-dae9b9dd4a0d",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "government"
+        },
+        {
+          "langCode": "fr",
+          "value": "gouvernement"
+        },
+        {
+          "langCode": "ru",
+          "value": "правительство",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "pravitel'stvo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "22456afe-8e32-4787-86ec-e1464985f830",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "number"
+        },
+        {
+          "langCode": "fr",
+          "value": "nombre"
+        },
+        {
+          "langCode": "ru",
+          "value": "номер",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "nomer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ebb68bb6-f769-4145-b693-f858499b0fc2",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "night"
+        },
+        {
+          "langCode": "fr",
+          "value": "nuit"
+        },
+        {
+          "langCode": "ru",
+          "value": "ночь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "noch'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e65ae21f-b1a7-4713-811c-4fd72dd46dcf",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "point"
+        },
+        {
+          "langCode": "fr",
+          "value": "point"
+        },
+        {
+          "langCode": "ru",
+          "value": "точка",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "tochka"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e8d5019b-ba94-49ec-927c-70acd2454628",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "home"
+        },
+        {
+          "langCode": "fr",
+          "value": "maison"
+        },
+        {
+          "langCode": "ru",
+          "value": "Главная",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Glavnaya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fecd7a87-e912-47de-b47f-52481cfd2474",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "water"
+        },
+        {
+          "langCode": "fr",
+          "value": "eau"
+        },
+        {
+          "langCode": "ru",
+          "value": "воды",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vody"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "692b6dc1-293a-46fe-ac62-b0a6df8bbf01",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "room"
+        },
+        {
+          "langCode": "fr",
+          "value": "chambre"
+        },
+        {
+          "langCode": "ru",
+          "value": "комната",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "komnata"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "31b6d4ec-ee9d-40b3-a230-ea270e4ab132",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "mother"
+        },
+        {
+          "langCode": "fr",
+          "value": "mère"
+        },
+        {
+          "langCode": "ru",
+          "value": "мама",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "mama"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7c08b2a0-71af-4f49-b6d6-ec1d0820ecbf",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "area"
+        },
+        {
+          "langCode": "fr",
+          "value": "région"
+        },
+        {
+          "langCode": "ru",
+          "value": "площадь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "ploshchad'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1ffcb3c2-a7e3-4277-b4c3-099a8376bba3",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "money"
+        },
+        {
+          "langCode": "fr",
+          "value": "argent"
+        },
+        {
+          "langCode": "ru",
+          "value": "Деньги",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Den'gi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b4efc91b-8d30-4b87-ab84-13f61904db83",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "story"
+        },
+        {
+          "langCode": "fr",
+          "value": "récit"
+        },
+        {
+          "langCode": "ru",
+          "value": "история",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "istoriya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3681a7d4-adc3-4d62-b456-d05276b24c16",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "fact"
+        },
+        {
+          "langCode": "fr",
+          "value": "fait"
+        },
+        {
+          "langCode": "ru",
+          "value": "факт",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "fakt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b916c69c-9fe3-4f18-8969-3527eb538985",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "month"
+        },
+        {
+          "langCode": "fr",
+          "value": "mois"
+        },
+        {
+          "langCode": "ru",
+          "value": "месяц",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "mesyats"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "107da941-9dce-44ed-8053-5d82059ed079",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "lot"
+        },
+        {
+          "langCode": "fr",
+          "value": "lot"
+        },
+        {
+          "langCode": "ru",
+          "value": "много",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "mnogo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8a915838-6ae3-4b84-9345-e332139f7316",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "right"
+        },
+        {
+          "langCode": "fr",
+          "value": "droite"
+        },
+        {
+          "langCode": "ru",
+          "value": "правильно",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "pravil'no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "45441580-e077-4b12-802d-50b625a695c2",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "study"
+        },
+        {
+          "langCode": "fr",
+          "value": "étude"
+        },
+        {
+          "langCode": "ru",
+          "value": "изучение",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "izucheniye"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ad218a46-9d75-4199-aca0-ffccee12253b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "book"
+        },
+        {
+          "langCode": "fr",
+          "value": "livre"
+        },
+        {
+          "langCode": "ru",
+          "value": "книга",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "kniga"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "836478d9-0978-41da-b216-fb83632cfd06",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "eye"
+        },
+        {
+          "langCode": "fr",
+          "value": "œil"
+        },
+        {
+          "langCode": "ru",
+          "value": "глаз",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "glaz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "637efc68-0f86-4dac-8f52-cf1d2ba83c35",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "job"
+        },
+        {
+          "langCode": "fr",
+          "value": "emploi"
+        },
+        {
+          "langCode": "ru",
+          "value": "работа",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "rabota"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8cbbb6d7-22d7-405e-a7dc-d9294b1fd05f",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "word"
+        },
+        {
+          "langCode": "fr",
+          "value": "mot"
+        },
+        {
+          "langCode": "ru",
+          "value": "слово",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "slovo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "af1f6199-eee8-4e1d-ac2b-e0e6279fe04f",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "business"
+        },
+        {
+          "langCode": "fr",
+          "value": "Entreprise"
+        },
+        {
+          "langCode": "ru",
+          "value": "бизнес",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "biznes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "076f49d2-2453-4d16-9bac-1aa872872c3a",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "issue"
+        },
+        {
+          "langCode": "fr",
+          "value": "problème"
+        },
+        {
+          "langCode": "ru",
+          "value": "вопрос",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vopros"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f54a4676-e067-464e-8863-67b668b0a96f",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "side"
+        },
+        {
+          "langCode": "fr",
+          "value": "côté"
+        },
+        {
+          "langCode": "ru",
+          "value": "боковая сторона",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "bokovaya storona"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "168432f6-2263-4996-b578-6d5007660476",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "kind"
+        },
+        {
+          "langCode": "fr",
+          "value": "gentil"
+        },
+        {
+          "langCode": "ru",
+          "value": "своего рода",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "svoyego roda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "55a7e6e5-8f36-41a0-9b6b-cbb77b1890a1",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "head"
+        },
+        {
+          "langCode": "fr",
+          "value": "tête"
+        },
+        {
+          "langCode": "ru",
+          "value": "глава",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "glava"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c5ec5882-c61e-45cb-98ed-95c408abe0f4",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "house"
+        },
+        {
+          "langCode": "fr",
+          "value": "maison"
+        },
+        {
+          "langCode": "ru",
+          "value": "дом",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "dom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "093df6a6-b80e-4a4b-9a70-f589a53ea230",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "service"
+        },
+        {
+          "langCode": "fr",
+          "value": "un service"
+        },
+        {
+          "langCode": "ru",
+          "value": "оказание услуг",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "okazaniye uslug"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "66d00afe-dfdb-49c6-8005-11d4f365693b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "friend"
+        },
+        {
+          "langCode": "fr",
+          "value": "ami"
+        },
+        {
+          "langCode": "ru",
+          "value": "друг",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "drug"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a7480912-074b-4a5e-b3ae-81cfdf6f3bc0",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "father"
+        },
+        {
+          "langCode": "fr",
+          "value": "père"
+        },
+        {
+          "langCode": "ru",
+          "value": "отец",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "otets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "caf659f1-e340-4625-b4dc-08fe7c5669ef",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "power"
+        },
+        {
+          "langCode": "fr",
+          "value": "Puissance"
+        },
+        {
+          "langCode": "ru",
+          "value": "мощность",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "moshchnost'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3ef22349-c2ed-4c51-b78b-4dacfe82e47e",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "hour"
+        },
+        {
+          "langCode": "fr",
+          "value": "heure"
+        },
+        {
+          "langCode": "ru",
+          "value": "час",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "chas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13aa3875-8406-4336-b840-7b9b6bfc9f8b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "game"
+        },
+        {
+          "langCode": "fr",
+          "value": "Jeu"
+        },
+        {
+          "langCode": "ru",
+          "value": "игра",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "igra"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ecc84f7d-8a48-4815-b8ae-93b5bc7de6f6",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "line"
+        },
+        {
+          "langCode": "fr",
+          "value": "ligne"
+        },
+        {
+          "langCode": "ru",
+          "value": "линия",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "liniya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3fc49653-0502-4287-abbe-84f7768c55ea",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "end"
+        },
+        {
+          "langCode": "fr",
+          "value": "fin"
+        },
+        {
+          "langCode": "ru",
+          "value": "конец",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "konets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4c868683-42dd-4021-beaf-62f925f0ac82",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "member"
+        },
+        {
+          "langCode": "fr",
+          "value": "membre"
+        },
+        {
+          "langCode": "ru",
+          "value": "член",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "chlen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d25a14b7-2a9d-4afd-b0d4-bca661eff861",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "law"
+        },
+        {
+          "langCode": "fr",
+          "value": "loi"
+        },
+        {
+          "langCode": "ru",
+          "value": "закон",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "zakon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5d597899-b800-4f65-8b4a-8444800d60a6",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "car"
+        },
+        {
+          "langCode": "fr",
+          "value": "voiture"
+        },
+        {
+          "langCode": "ru",
+          "value": "автомобиль",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "avtomobil'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e424961b-9879-42f2-acd0-487c56fef491",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "city"
+        },
+        {
+          "langCode": "fr",
+          "value": "ville"
+        },
+        {
+          "langCode": "ru",
+          "value": "город",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "gorod"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eb66beb2-2db1-4bbb-91d5-183c44bf0d6e",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "community"
+        },
+        {
+          "langCode": "fr",
+          "value": "communauté"
+        },
+        {
+          "langCode": "ru",
+          "value": "сообщество",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "soobshchestvo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cb99b593-c277-4522-b7c4-b4ae31115ab4",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "name"
+        },
+        {
+          "langCode": "fr",
+          "value": "prénom"
+        },
+        {
+          "langCode": "ru",
+          "value": "имя",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "imya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19cf75d2-dbaa-4d26-b846-b4b577654c19",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "president"
+        },
+        {
+          "langCode": "fr",
+          "value": "Président"
+        },
+        {
+          "langCode": "ru",
+          "value": "президент",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "prezident"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9b0b6431-04b9-4e8d-80fd-a5c63f59fcb5",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "team"
+        },
+        {
+          "langCode": "fr",
+          "value": "équipe"
+        },
+        {
+          "langCode": "ru",
+          "value": "команда",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "komanda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2676091e-779c-4d94-b34d-92b800acf26b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "minute"
+        },
+        {
+          "langCode": "fr",
+          "value": "minute"
+        },
+        {
+          "langCode": "ru",
+          "value": "минут",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "minut"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3c49c800-3277-47e6-9140-8c225815c3b2",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "idea"
+        },
+        {
+          "langCode": "fr",
+          "value": "idée"
+        },
+        {
+          "langCode": "ru",
+          "value": "идея",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "ideya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "797da186-1557-4dc2-ace8-447da68e22a6",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "kid"
+        },
+        {
+          "langCode": "fr",
+          "value": "enfant"
+        },
+        {
+          "langCode": "ru",
+          "value": "дитя",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "ditya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "574e8475-6aec-44a9-b1fc-b113c7fb1ab8",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "body"
+        },
+        {
+          "langCode": "fr",
+          "value": "corps"
+        },
+        {
+          "langCode": "ru",
+          "value": "тело",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "telo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "946b584c-52dd-4db7-9c74-5d807863f6fe",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "information"
+        },
+        {
+          "langCode": "fr",
+          "value": "information"
+        },
+        {
+          "langCode": "ru",
+          "value": "Информация",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Informatsiya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4035857a-5a5f-42e1-a1d2-1e06cd4b5a2b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "back"
+        },
+        {
+          "langCode": "fr",
+          "value": "arrière"
+        },
+        {
+          "langCode": "ru",
+          "value": "назад",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "nazad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "37dd387e-3255-498c-92ba-039a6781c047",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "parent"
+        },
+        {
+          "langCode": "fr",
+          "value": "parent"
+        },
+        {
+          "langCode": "ru",
+          "value": "родитель",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "roditel'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30d4badb-f923-4156-ad49-2ffe34fe5963",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "face"
+        },
+        {
+          "langCode": "fr",
+          "value": "visage"
+        },
+        {
+          "langCode": "ru",
+          "value": "лицо",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "litso"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "299b8a77-2bd8-42c8-8526-ebe4931e61f2",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "others"
+        },
+        {
+          "langCode": "fr",
+          "value": "autres"
+        },
+        {
+          "langCode": "ru",
+          "value": "другие",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "drugiye"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "68083b09-5eca-4395-9670-36938c2e4168",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "level"
+        },
+        {
+          "langCode": "fr",
+          "value": "niveau"
+        },
+        {
+          "langCode": "ru",
+          "value": "уровень",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "uroven'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "08d14bd8-f68d-44d6-a98c-b8c42e8f5f4e",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "office"
+        },
+        {
+          "langCode": "fr",
+          "value": "Bureau"
+        },
+        {
+          "langCode": "ru",
+          "value": "офис",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "ofis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fe3395a7-a4db-499e-9c04-059fca82e1b4",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "door"
+        },
+        {
+          "langCode": "fr",
+          "value": "porte"
+        },
+        {
+          "langCode": "ru",
+          "value": "дверь",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "dver'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "63ced58f-83e2-4511-89ff-fa1f50f1be8b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "health"
+        },
+        {
+          "langCode": "fr",
+          "value": "santé"
+        },
+        {
+          "langCode": "ru",
+          "value": "здоровье",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "zdorov'ye"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "340679fe-edc3-4daa-91e5-6807bc50153c",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "person"
+        },
+        {
+          "langCode": "fr",
+          "value": "la personne"
+        },
+        {
+          "langCode": "ru",
+          "value": "человек",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "chelovek"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c503d4b1-130d-49e5-a336-0a2cd5ec73de",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "art"
+        },
+        {
+          "langCode": "fr",
+          "value": "art"
+        },
+        {
+          "langCode": "ru",
+          "value": "Изобразительное искусство",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "Izobrazitel'noye iskusstvo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12cddeeb-4528-4d67-bad3-65fc9fd5a582",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "war"
+        },
+        {
+          "langCode": "fr",
+          "value": "guerre"
+        },
+        {
+          "langCode": "ru",
+          "value": "война",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "voyna"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dd0a6011-779a-4036-acde-d23f9928337b",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "history"
+        },
+        {
+          "langCode": "fr",
+          "value": "histoire"
+        },
+        {
+          "langCode": "ru",
+          "value": "история",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "istoriya"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "62d9f558-2a6d-43fe-8926-5ebefe4b144a",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "party"
+        },
+        {
+          "langCode": "fr",
+          "value": "fête"
+        },
+        {
+          "langCode": "ru",
+          "value": "вечеринка",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vecherinka"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a7d1a6da-5f4f-4103-8ae9-93825936ec12",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "result"
+        },
+        {
+          "langCode": "fr",
+          "value": "résultat"
+        },
+        {
+          "langCode": "ru",
+          "value": "результат",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "rezul'tat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fa0a4207-a549-485a-a4de-90942df7fcfe",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "change"
+        },
+        {
+          "langCode": "fr",
+          "value": "changement"
+        },
+        {
+          "langCode": "ru",
+          "value": "изменение",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "izmeneniye"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6ec815f8-e223-4a2d-a774-4d7d6a4e9b80",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "morning"
+        },
+        {
+          "langCode": "fr",
+          "value": "Matin"
+        },
+        {
+          "langCode": "ru",
+          "value": "утро",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "utro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2800c91-dfd9-4fb1-abee-f765593f0369",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "reason"
+        },
+        {
+          "langCode": "fr",
+          "value": "raison"
+        },
+        {
+          "langCode": "ru",
+          "value": "причина",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "prichina"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ff94a32d-8830-4276-b417-d158b90eca6c",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "research"
+        },
+        {
+          "langCode": "fr",
+          "value": "recherche"
+        },
+        {
+          "langCode": "ru",
+          "value": "исследование",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "issledovaniye"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ff32e771-2687-4859-95f8-5b50dd9a2ab4",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "girl"
+        },
+        {
+          "langCode": "fr",
+          "value": "fille"
+        },
+        {
+          "langCode": "ru",
+          "value": "девушка",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "devushka"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bf83daf5-4cb2-4819-87a4-40da22b5964c",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "guy"
+        },
+        {
+          "langCode": "fr",
+          "value": "gars"
+        },
+        {
+          "langCode": "ru",
+          "value": "парень",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "paren'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "672cf7c6-2e42-41f8-8ce8-3b5ef5525be3",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "moment"
+        },
+        {
+          "langCode": "fr",
+          "value": "moment"
+        },
+        {
+          "langCode": "ru",
+          "value": "момент",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "moment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4a33caa0-0dbe-4e9c-86e8-285d6ac0e391",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "air"
+        },
+        {
+          "langCode": "fr",
+          "value": "air"
+        },
+        {
+          "langCode": "ru",
+          "value": "воздух",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "vozdukh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2b2d812a-62da-4dde-a4f3-d420a91e6b3e",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "teacher"
+        },
+        {
+          "langCode": "fr",
+          "value": "prof"
+        },
+        {
+          "langCode": "ru",
+          "value": "учитель",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "uchitel'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cf041b13-5cfd-4a70-83a9-47322f2d46a0",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "force"
+        },
+        {
+          "langCode": "fr",
+          "value": "Obliger"
+        },
+        {
+          "langCode": "ru",
+          "value": "сила",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "sila"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e7a3e40b-84cd-4e4e-9427-3a0b0c13d054",
+      "translations": [
+        {
+          "langCode": "en",
+          "value": "education"
+        },
+        {
+          "langCode": "fr",
+          "value": "éducation"
+        },
+        {
+          "langCode": "ru",
+          "value": "образование",
+          "phonetics": [
+            {
+              "langCode": "en",
+              "value": "obrazovaniye"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

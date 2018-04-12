@@ -28,7 +28,7 @@ var languages = []Language{
 func GetLang(code string) Language {
 	code = strings.Trim(code, " ")
 	for _, l := range languages {
-		if l.Code == code{
+		if strings.EqualFold(l.Code, code){
 			return l
 		}
 	}
