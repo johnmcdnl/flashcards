@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  name = "github.com/coreos/bbolt"
+  packages = ["."]
+  revision = "583e8937c61f1af6513608ccc75c97b6abdf4ff9"
+  version = "v1.3.0"
+
+[[projects]]
   name = "github.com/satori/go.uuid"
   packages = ["."]
   revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
@@ -31,6 +37,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "7f100711a647ad5d32df5bfdd483ab1cdc06efefab0b482cdccdaf5d6f4d7801"
+  inputs-digest = "b7e65ed84230b74bcaad0aa106d35cde13d8d2942052f81cf316decb71309d25"
   solver-name = "gps-cdcl"
   solver-version = 1
