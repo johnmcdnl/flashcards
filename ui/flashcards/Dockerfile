@@ -1,4 +1,6 @@
-FROM node
+ARG node_version=latest
+
+FROM node:${node_version}
 
 WORKDIR /usr/src/flashcards
 
