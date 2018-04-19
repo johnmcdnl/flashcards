@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import Card from "./Card";
-import Question from "./Question";
 
 class Answers extends Component {
   render() {
