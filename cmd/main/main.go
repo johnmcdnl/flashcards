@@ -8,7 +8,7 @@ import (
 
 func main() {
 	logrus.SetLevel(logrus.InfoLevel)
-
+	fmt.Println("It runs")
 	var deck = f.NewDeck(nil)
 
 	//deck.With(

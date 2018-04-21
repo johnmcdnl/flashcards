@@ -3,8 +3,9 @@ FROM golang
 RUN mkdir -p /go/src/github.com/johnmcdnl/flashcards
 WORKDIR /go/src/github.com/johnmcdnl/flashcards
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
+RUN go build -o flashcards ./cmd/main/main.go
 
-FROM scratch
-COPY --from=0  /go/src/github.com/johnmcdnl/flashcards/main /main
-CMD ["/main"]
+FROM debian:stretch-slim
+COPY --from=0  /go/src/github.com/johnmcdnl/flashcards/flashcards ./flashcards
+COPY --from=0  /go/src/github.com/johnmcdnl/flashcards/data ./data
+CMD ["./flashcards"]
