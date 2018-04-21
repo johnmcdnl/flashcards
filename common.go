@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 )
 
-func jsonString(i interface{})string{
+func jsonString(i interface{}) string {
 	j, err := json.Marshal(i)
-	if err !=nil{
+	if err != nil {
 		return err.Error()
 	}
 	return string(j)

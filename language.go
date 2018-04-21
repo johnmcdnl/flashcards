@@ -2,6 +2,7 @@ package flashcards
 
 import (
 	"strings"
+
 	"github.com/sirupsen/logrus"
 )
 
@@ -28,7 +29,7 @@ var languages = []Language{
 func GetLang(code string) Language {
 	code = strings.Trim(code, " ")
 	for _, l := range languages {
-		if strings.EqualFold(l.Code, code){
+		if strings.EqualFold(l.Code, code) {
 			return l
 		}
 	}

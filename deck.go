@@ -1,18 +1,23 @@
 package flashcards
 
 import (
-	"github.com/sirupsen/logrus"
-	"math/rand"
-	"time"
-	"path/filepath"
-	"os"
-	"strings"
-	"io/ioutil"
-	"encoding/csv"
 	"bytes"
-	"fmt"
+	"encoding/csv"
 	"encoding/json"
+	"fmt"
+	"io/ioutil"
+	"math/rand"
+	"os"
+	"path/filepath"
+	"strings"
+	"time"
+
+	"github.com/sirupsen/logrus"
 )
+
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
 
 // Deck is a group of Phrases
 type Deck struct {
@@ -44,9 +49,11 @@ func (d *Deck) With(p *Phrase) *Deck {
 
 // Next gets the next card from the deck
 func (d *Deck) Next() *Phrase {
-	logrus.Debugln(`func (d *Deck) Next() *Phrase {`, )
+	logrus.Debugln(`func (d *Deck) Next() *Phrase {`)
 
-	rand.Seed(time.Now().UnixNano())
+	if len(d.Phrases) == 0 {
+		logrus.Error("The deck is empty")
+	}
 	return d.Phrases[rand.Intn(len(d.Phrases))]
 }
 

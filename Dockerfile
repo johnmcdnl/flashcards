@@ -1,11 +1,10 @@
-FROM golang
-
-RUN mkdir -p /go/src/github.com/johnmcdnl/flashcards
-WORKDIR /go/src/github.com/johnmcdnl/flashcards
-COPY . .
+FROM golang:alpine AS builder
+WORKDIR ./src/github.com/johnmcdnl/flashcards
+ADD . .
 RUN go build -o flashcards ./cmd/main/main.go
 
-FROM debian:stretch-slim
-COPY --from=0  /go/src/github.com/johnmcdnl/flashcards/flashcards ./flashcards
-COPY --from=0  /go/src/github.com/johnmcdnl/flashcards/data ./data
-CMD ["./flashcards"]
+FROM alpine
+WORKDIR /flashcards
+COPY --from=builder /go/src/github.com/johnmcdnl/flashcards/flashcards .
+COPY ./data ./data
+ENTRYPOINT ./flashcards

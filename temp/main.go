@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/coreos/bbolt"
-	"os"
-	"github.com/sirupsen/logrus"
 	"fmt"
+	"os"
+
+	"github.com/coreos/bbolt"
+	"github.com/sirupsen/logrus"
 )
 
 func main() {
@@ -17,6 +18,7 @@ func main() {
 type data struct {
 	db *bolt.DB
 }
+
 func newData() *data {
 	d := new(data)
 	d.db = new(bolt.DB)

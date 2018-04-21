@@ -1,14 +1,15 @@
 package flashcards
 
 import (
-	"github.com/sirupsen/logrus"
-	"strings"
 	"fmt"
+	"strings"
+
+	"github.com/sirupsen/logrus"
 )
 
 //Phrase represents a word or sentence that has meaning
 type Phrase struct {
-	ID                          `json:"id"`
+	ID           `json:"id"`
 	Translations []*Translation `json:"translations"`
 }
 
@@ -27,7 +28,7 @@ func (p *Phrase) With(t *Translation) *Phrase {
 		return p
 	}
 
-	if exist := p.Get(t.Language); exist !=nil{
+	if exist := p.Get(t.Language); exist != nil {
 		logrus.Error("Phrase with translation is already existing")
 		return p
 	}
