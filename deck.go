@@ -64,6 +64,16 @@ func (d *Deck) Answer(p *Phrase, l Language, ans string) error {
 	return p.Answer(l, ans)
 }
 
+//GetPhraseByID retrieves a phrase by an ID
+func (d *Deck) GetPhraseByID(id string) *Phrase {
+	for _, phrase := range d.Phrases {
+		if phrase.ID == ID(id) {
+			return phrase
+		}
+	}
+	return nil
+}
+
 // SeedFromCSV populates a deck from the data folder
 func (d *Deck) SeedFromCSV() {
 	walkFn := func(path string, _ os.FileInfo, err error) error {

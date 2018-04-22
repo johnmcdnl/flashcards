@@ -9,7 +9,7 @@ import (
 //Language is a ISO language
 type Language struct {
 	name string
-	Code string `json:"langCode"`
+	Code string `json:"language"`
 }
 
 // Predefined Languages
