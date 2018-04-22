@@ -24,22 +24,27 @@ func newData() *data {
 	d.db = new(bolt.DB)
 	return d
 }
+
 func (d *data) open() {
 	//d.close()
 	db, _ := bolt.Open("flashcards.db", os.ModePerm, nil)
 	d.db = db
 }
+
 func (d *data) close() {
 	d.db.Close()
 }
+
 func (d *data) create(bucket, key, value string) error {
 	return d.update(bucket, key, value)
 }
+
 func (d *data) read() {
 	defer d.close()
 	d.open()
 
 }
+
 func (d *data) readAll(bucket string) {
 	defer d.close()
 	d.open()
@@ -57,6 +62,7 @@ func (d *data) readAll(bucket string) {
 	d.db.View(tx)
 
 }
+
 func (d *data) update(bucket, key, value string) error {
 	defer d.close()
 	d.open()
@@ -73,4 +79,5 @@ func (d *data) update(bucket, key, value string) error {
 
 	return d.db.Update(tx)
 }
+
 func (d *data) delete() {}
